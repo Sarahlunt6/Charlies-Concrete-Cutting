@@ -1,7 +1,7 @@
 export default function Mockup3() {
   return (
     <iframe
-      src="/mockups/mockup-3-blueprint-precision/index.html"
+      src="/mockups/mockup-3-blueprint-precision/mockup3.html"
       style={{
         position: 'fixed',
         top: 0,

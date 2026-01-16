@@ -1,7 +1,7 @@
 export default function Mockup1() {
   return (
     <iframe
-      src="/mockups/mockup-1-industrial-heritage/index.html"
+      src="/mockups/mockup-1-industrial-heritage/mockup1.html"
       style={{
         position: 'fixed',
         top: 0,
