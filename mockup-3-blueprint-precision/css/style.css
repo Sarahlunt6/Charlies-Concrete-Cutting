@@ -39,16 +39,16 @@
 
 body {
     font-family: var(--font-body);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
     color: var(--chocolate-brown);
     background-color: var(--white);
     overflow-x: hidden;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 3rem;
 }
@@ -101,7 +101,7 @@ h2::after {
 
 h3 {
     font-family: var(--font-subheading);
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -196,7 +196,7 @@ h3 {
     text-decoration: none;
     font-family: var(--font-subheading);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1.5px;
     transition: all 0.3s;
     padding: 0.75rem 0;
@@ -268,7 +268,7 @@ h3 {
 .dropdown a {
     display: block;
     padding: 0.75rem 2rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     transition: all 0.2s;
     border-left: 3px solid transparent;
     letter-spacing: 1.2px;
@@ -295,7 +295,7 @@ h3 {
     text-decoration: none;
     font-family: var(--font-subheading);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 0.5px;
     transition: color 0.3s;
 }
@@ -596,9 +596,9 @@ h3 {
 }
 
 .service-card p {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.9;
-    font-size: 0.9375rem;
+    font-size: 1.375rem;
     color: var(--chocolate-light);
 }
 
@@ -611,10 +611,11 @@ h3 {
 
 .section-intro {
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     color: var(--chocolate-brown);
     margin-bottom: 3rem;
     line-height: 1.7;
+    font-weight: 400;
 }
 
 .areas-grid {
@@ -643,12 +644,13 @@ h3 {
 .area-card h3 {
     color: var(--chocolate-brown);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .area-card p {
     color: var(--metallic-grey);
     line-height: 1.7;
+    font-size: 1.25rem;
 }
 
 .service-radius {
@@ -661,8 +663,9 @@ h3 {
 
 .service-radius p {
     color: var(--chocolate-brown);
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     margin: 0;
+    font-weight: 400;
 }
 
 .radius-link {
@@ -708,13 +711,14 @@ h3 {
 .cert-card h3 {
     color: var(--chocolate-brown);
     margin-bottom: 1rem;
-    font-size: 1.375rem;
+    font-size: 1.75rem;
 }
 
 .cert-card p {
     color: var(--metallic-grey);
     line-height: 1.7;
-    font-size: 0.9375rem;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .tech-card h4 {
@@ -849,15 +853,15 @@ h3 {
 }
 
 .timeline-number {
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     border: 4px solid var(--golden-ochre);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--golden-ochre);
     margin: 0 auto 2rem;
@@ -901,12 +905,12 @@ h3 {
 
 .timeline-item h3 {
     margin-bottom: 1rem;
-    font-size: 1.125rem;
+    font-size: 1.75rem;
 }
 
 .timeline-item p {
-    font-size: 0.9375rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -964,7 +968,7 @@ h3 {
 .why-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.5rem;
+    gap: 5rem;
     position: relative;
     z-index: 1;
 }
@@ -978,7 +982,7 @@ h3 {
 .why-card {
     text-align: center;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 2rem;
+    padding: 3rem 2.5rem;
     border-radius: 8px;
     background: linear-gradient(135deg,
         rgba(255, 255, 255, 0.05) 0%,
@@ -1038,9 +1042,9 @@ h3 {
 
 .feature-item p {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
     color: rgba(255, 255, 255, 0.95);
-    font-size: 0.9375rem;
+    font-size: 1.375rem;
     font-weight: 400;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -1131,10 +1135,10 @@ h3 {
 }
 
 .trust-content p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 2;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -1189,93 +1193,83 @@ h3 {
     z-index: 1;
 }
 
-.contact-grid {
+.contact-grid-new {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5rem;
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: left;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
     position: relative;
     z-index: 1;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+.contact-item-new {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-bottom: 3px solid rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
 }
 
-.contact-item {
-    padding: 1.75rem 0;
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(90deg, transparent, var(--golden-ochre), var(--golden-bright), var(--golden-ochre), transparent) 1;
-    transition: all 0.4s ease;
+.contact-item-new:hover {
+    border-bottom-color: var(--golden-ochre);
+    transform: translateY(-2px);
 }
 
-.contact-item:last-child {
-    border-bottom: none;
-}
-
-.contact-item:hover {
-    padding-left: 1.5rem;
-    border-image: linear-gradient(90deg, transparent, var(--golden-bright), var(--golden-ochre), var(--golden-bright), transparent) 1;
-    transform: translateX(5px);
-}
-
-.contact-item h3 {
-    font-size: 0.875rem;
-    margin-bottom: 0.75rem;
-    letter-spacing: 1.5px;
-}
-
-.contact-link {
-    color: var(--golden-dark);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: all 0.4s;
+.contact-item-new h3 {
     font-family: var(--font-subheading);
-    letter-spacing: 0.5px;
-    text-shadow: 0 2px 10px rgba(233, 184, 36, 0.3);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--golden-dark);
 }
 
-.contact-link:hover {
-    color: var(--golden-bright);
-    transform: translateX(8px) scale(1.05);
-    display: inline-block;
-    text-shadow:
-        0 4px 20px rgba(233, 184, 36, 0.6),
-        0 0 30px rgba(233, 184, 36, 0.4);
+.contact-item-new p {
+    color: var(--chocolate-brown);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
 }
 
-.contact-item p {
-    font-weight: 300;
-    line-height: 1.9;
-    font-size: 0.9375rem;
+.contact-link-new {
+    display: block;
+    font-family: var(--font-subheading);
+    font-size: 1.5rem;
+    color: var(--chocolate-brown);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-weight: 700;
 }
 
-.contact-cta {
+.contact-link-new:hover {
+    color: var(--golden-ochre);
+    transform: scale(1.05);
+}
+
+.cta-button-wrapper-new {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cta-button.large {
-    padding: 1.75rem 3rem;
+.cta-button-new {
+    background: linear-gradient(135deg, var(--golden-ochre) 0%, var(--golden-bright) 100%);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    font-family: var(--font-subheading);
     font-size: 1.125rem;
+    border-radius: 4px;
+    box-shadow: 0 6px 25px rgba(218, 165, 32, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 3px;
-    box-shadow:
-        0 10px 40px rgba(233, 184, 36, 0.7),
-        0 0 80px rgba(233, 184, 36, 0.5);
+    display: inline-block;
 }
 
-.cta-button.large:hover {
-    transform: translateY(-4px) scale(1.08);
-    box-shadow:
-        0 15px 60px rgba(233, 184, 36, 0.8),
-        0 0 100px rgba(233, 184, 36, 0.6);
+.cta-button-new:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(218, 165, 32, 0.6);
+    background: linear-gradient(135deg, var(--golden-bright) 0%, var(--golden-ochre) 100%);
 }
 
 /* Footer */
@@ -1326,18 +1320,18 @@ h3 {
     font-style: italic;
     color: var(--metallic-grey);
     margin-bottom: 1rem;
-    font-size: 0.9375rem;
+    font-size: 1.125rem;
 }
 
 .footer-col p {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.9;
-    font-size: 0.9375rem;
+    font-size: 1.125rem;
 }
 
 .footer-col h4 {
     font-family: var(--font-subheading);
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     color: var(--chocolate-brown);
@@ -1369,8 +1363,8 @@ h3 {
 .footer-col a {
     color: var(--golden-ochre);
     text-decoration: none;
-    font-weight: 300;
-    font-size: 0.9375rem;
+    font-weight: 400;
+    font-size: 1.125rem;
     transition: all 0.3s;
     display: inline-block;
     position: relative;
@@ -1401,8 +1395,8 @@ h3 {
 .contact-info-footer li {
     margin-bottom: 1.5rem;
     line-height: 1.9;
-    font-weight: 300;
-    font-size: 0.9375rem;
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
 .footer-bottom {
@@ -1421,8 +1415,8 @@ h3 {
 }
 
 .footer-bottom p {
-    font-size: 0.875rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     color: var(--metallic-grey);
 }
 
@@ -1550,6 +1544,11 @@ h3 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .contact-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1565,5 +1564,10 @@ h3 {
         width: 52px;
         height: 52px;
         font-size: 1.5rem;
+    }
+
+    .contact-grid-new {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
