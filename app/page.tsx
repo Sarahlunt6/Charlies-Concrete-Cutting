@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <h1>Charlie&apos;s Concrete Cutting</h1>
-            <p className="hero-subheadline">Professional Concrete Cutting Services</p>
+            <p className="hero-subheadline">A Name You Can Trust</p>
             <Link href="/contact#quote" className="cta-button">GET A FREE QUOTE</Link>
           </div>
         </section>
