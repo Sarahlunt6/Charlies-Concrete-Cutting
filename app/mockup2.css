@@ -2487,7 +2487,7 @@ h3 {
 }
 
 .view-all-box svg {
-    color: var(--golden-ochre);
+    color: var(--white);
     transition: transform 0.3s ease;
     z-index: 1;
 }
@@ -2497,7 +2497,7 @@ h3 {
 }
 
 .view-all-box .capability-header {
-    color: var(--golden-ochre);
+    color: var(--white);
     z-index: 1;
 }
 
@@ -2508,10 +2508,6 @@ h3 {
 .view-all-box:hover {
     background: linear-gradient(135deg, var(--golden-ochre) 0%, var(--golden-dark) 100%);
     transform: translateY(-5px) scale(1.02);
-}
-
-.view-all-box:hover .capability-header {
-    color: var(--white);
 }
 
 .capability-header {
