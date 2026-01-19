@@ -14,7 +14,6 @@ export default function Home() {
         <section className="hero">
           <div className="hero-image">
             <img src="/images/placeholder.jpg" alt="Professional concrete cutting in action" className="hero-bg-image" />
-            <div className="hero-accent"></div>
           </div>
         </section>
 
