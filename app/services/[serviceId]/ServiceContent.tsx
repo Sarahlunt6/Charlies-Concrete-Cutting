@@ -11,7 +11,7 @@ export default function ServiceContent({ service }: { service: Service }) {
   return (
     <main>
       {/* Service Hero */}
-      <section className="service-hero">
+      <section className={`service-hero service-hero-${service.id}`}>
         <div className="hero-background-pattern"></div>
         <div className="container">
           <div className="service-hero-content">
