@@ -2332,14 +2332,12 @@ h3 {
 }
 
 .service-detail-block {
-    background: linear-gradient(135deg, #FAFAFA 0%, var(--white) 100%);
+    background: var(--white);
     padding: 0;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(179, 84, 30, 0.1);
-    transition: all 0.4s ease;
+    border: 3px solid var(--chocolate-brown);
+    transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .service-detail-block::before {
@@ -2348,37 +2346,39 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, var(--rust-orange), var(--golden-ochre));
+    height: 4px;
+    background: var(--rust-orange);
 }
 
 .service-detail-block:hover {
-    box-shadow: 0 12px 40px rgba(179, 84, 30, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .accordion-header {
     width: 100%;
-    background: transparent;
+    background: var(--white);
     border: none;
     padding: 2rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .accordion-header:hover {
-    background: rgba(179, 84, 30, 0.05);
+    background: rgba(179, 84, 30, 0.03);
 }
 
 .accordion-header h2 {
-    color: var(--deep-brown);
+    color: var(--chocolate-brown);
     margin: 0;
     text-align: left;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-family: var(--font-heading);
 }
 
 .accordion-header h2::after {
@@ -2389,6 +2389,16 @@ h3 {
     color: var(--rust-orange);
     flex-shrink: 0;
     transition: transform 0.3s ease;
+    background: rgba(179, 84, 30, 0.1);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+}
+
+.accordion-header:hover .accordion-arrow {
+    background: var(--rust-orange);
+    color: var(--white);
 }
 
 .accordion-arrow.open {
@@ -2398,13 +2408,15 @@ h3 {
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 2.5rem;
+    background: var(--white);
 }
 
 .accordion-content.open {
-    max-height: 2000px;
+    max-height: 3000px;
     padding: 0 2.5rem 2.5rem;
+    border-top: 2px solid rgba(179, 84, 30, 0.1);
 }
 
 .block-intro {
