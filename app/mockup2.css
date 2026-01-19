@@ -337,12 +337,22 @@ h3 {
 /* CTA button on hero image for desktop */
 .hero-image-cta {
     position: absolute;
-    bottom: 3rem;
+    bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     padding: 1.25rem 3rem;
     font-size: 1.125rem;
+    transition: none;
+}
+
+.hero-image-cta::before {
+    display: none;
+}
+
+.hero-image-cta:hover {
+    transform: translateX(-50%);
+    box-shadow: 0 4px 12px rgba(179, 84, 30, 0.4);
 }
 
 .hero-accent {

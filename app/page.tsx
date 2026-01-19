@@ -14,7 +14,7 @@ export default function Home() {
         <section className="hero">
           <div className="hero-image">
             <img src="/images/hero.jpeg" alt="Professional concrete cutting in action" className="hero-bg-image" />
-            <Link href="/contact#quote" className="hero-image-cta cta-button">GET A FREE QUOTE</Link>
+            <Link href="/contact#quote" className="hero-image-cta cta-button">GET A QUOTE</Link>
           </div>
           <div className="hero-content">
             <h1>Charlie&apos;s Concrete Cutting</h1>
