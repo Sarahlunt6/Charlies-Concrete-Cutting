@@ -2222,7 +2222,7 @@ h3 {
 }
 
 /* Demolition & Removal page specific hero */
-.service-hero-demolition-removal {
+.service-hero-demolition {
     background:
         linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
         url('/images/demolition-removal-hero.png') center/cover no-repeat;
