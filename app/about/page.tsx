@@ -22,7 +22,7 @@ export default function About() {
             <div className="about-intro">
               <h2>Three Generations of Excellence</h2>
               <p className="lead-text">
-                Charlie&apos;s Concrete Cutting is a family-owned business proud to represent three generations of concrete cutting professionals. For decades, we&apos;ve been serving Tampa, Sarasota, Orlando, and surrounding areas with expert concrete cutting, coring, and scanning services. Our family legacy of craftsmanship, combined with our commitment to quality, safety, and customer satisfaction, has made us a trusted name in the industry.
+                Charlie&apos;s Concrete Cutting is a family-owned business proud to represent three generations of concrete cutting professionals. We serve Tampa, Sarasota, Orlando, and surrounding areas with expert concrete cutting, coring, and scanning services. Our family legacy of craftsmanship, combined with our commitment to quality, safety, and customer satisfaction, has made us a trusted name in the industry.
               </p>
             </div>
 
