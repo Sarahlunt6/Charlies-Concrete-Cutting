@@ -12,8 +12,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ServicePage({ params }: { params: { serviceId: string } }) {
-  const service = getServiceById(params.serviceId);
+export default async function ServicePage({ params }: { params: Promise<{ serviceId: string }> }) {
+  const { serviceId } = await params;
+  const service = getServiceById(serviceId);
 
   if (!service) {
     notFound();
