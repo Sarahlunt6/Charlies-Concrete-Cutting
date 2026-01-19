@@ -353,6 +353,7 @@ h3 {
 .hero-image-cta:hover {
     transform: translateX(-50%);
     box-shadow: 0 4px 12px rgba(179, 84, 30, 0.4);
+    background: linear-gradient(135deg, var(--golden-ochre) 0%, var(--rust-orange) 100%);
 }
 
 .hero-accent {
