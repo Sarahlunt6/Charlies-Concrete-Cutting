@@ -1,39 +1,56 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav-container">
         <div className="logo">
-          <Link href="/">
+          <Link href="/" onClick={closeMobileMenu}>
             <img src="/images/logo.png" alt="Charlie's Concrete Cutting - A Name You Can Depend On" className="logo-img" />
           </Link>
         </div>
-        <button className="mobile-menu-toggle" aria-label="Toggle menu">
+        <button
+          className={`mobile-menu-toggle ${mobileMenuOpen ? 'active' : ''}`}
+          aria-label="Toggle menu"
+          onClick={toggleMobileMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul className="nav-menu">
-          <li><Link href="/">HOME</Link></li>
+        <ul className={`nav-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <li><Link href="/" onClick={closeMobileMenu}>HOME</Link></li>
           <li className="has-dropdown">
-            <Link href="/services">SERVICES</Link>
+            <Link href="/services" onClick={closeMobileMenu}>SERVICES</Link>
             <ul className="dropdown">
-              <li><Link href="/services/slab-cutting">Slab Cutting</Link></li>
-              <li><Link href="/services/wall-cutting">Wall Cutting</Link></li>
-              <li><Link href="/services/core-drilling">Core Drilling</Link></li>
-              <li><Link href="/services/wire-sawing">Wire Sawing</Link></li>
-              <li><Link href="/services/chainsawing">Chainsawing</Link></li>
-              <li><Link href="/services/demolition">Demolition & Removal</Link></li>
-              <li><Link href="/services/gpr-scanning">GPR Scanning</Link></li>
-              <li><Link href="/services/safety-grooving">Safety Grooving</Link></li>
-              <li><Link href="/services/pour-back">Pour Back & Patching</Link></li>
+              <li><Link href="/services/slab-cutting" onClick={closeMobileMenu}>Slab Cutting</Link></li>
+              <li><Link href="/services/wall-cutting" onClick={closeMobileMenu}>Wall Cutting</Link></li>
+              <li><Link href="/services/core-drilling" onClick={closeMobileMenu}>Core Drilling</Link></li>
+              <li><Link href="/services/wire-sawing" onClick={closeMobileMenu}>Wire Sawing</Link></li>
+              <li><Link href="/services/chainsawing" onClick={closeMobileMenu}>Chainsawing</Link></li>
+              <li><Link href="/services/demolition" onClick={closeMobileMenu}>Demolition & Removal</Link></li>
+              <li><Link href="/services/gpr-scanning" onClick={closeMobileMenu}>GPR Scanning</Link></li>
+              <li><Link href="/services/safety-grooving" onClick={closeMobileMenu}>Safety Grooving</Link></li>
+              <li><Link href="/services/pour-back" onClick={closeMobileMenu}>Pour Back & Patching</Link></li>
             </ul>
           </li>
-          <li><Link href="/about">ABOUT</Link></li>
-          <li><Link href="/locations">LOCATIONS</Link></li>
-          <li><Link href="/gallery">GALLERY</Link></li>
-          <li><Link href="/contact">CONTACT</Link></li>
+          <li><Link href="/about" onClick={closeMobileMenu}>ABOUT</Link></li>
+          <li><Link href="/locations" onClick={closeMobileMenu}>LOCATIONS</Link></li>
+          <li><Link href="/gallery" onClick={closeMobileMenu}>GALLERY</Link></li>
+          <li><Link href="/contact" onClick={closeMobileMenu}>CONTACT</Link></li>
         </ul>
         <div className="nav-cta">
           <a href="tel:8138349011" className="phone">
@@ -42,7 +59,7 @@ export default function Header() {
             </svg>
             (813) 834-9011
           </a>
-          <Link href="/contact#quote" className="cta-button">GET A QUOTE</Link>
+          <Link href="/contact#quote" className="cta-button" onClick={closeMobileMenu}>GET A QUOTE</Link>
         </div>
       </nav>
     </header>

@@ -1064,15 +1064,89 @@ h3 {
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+        position: fixed;
+        top: 140px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(180deg, var(--deep-brown) 0%, #1a0f0d 100%);
+        flex-direction: column;
+        padding: 2rem 0;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        max-height: calc(100vh - 140px);
+        overflow-y: auto;
+        z-index: 999;
+    }
+
+    .nav-menu.mobile-open {
+        display: flex;
+    }
+
+    .nav-menu > li {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(179, 84, 30, 0.2);
+    }
+
+    .nav-menu > li > a {
+        padding: 0.75rem 1.5rem;
+        display: block;
+    }
+
+    .dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background: rgba(0,0,0,0.2);
+        margin-top: 0.75rem;
+        padding: 0.5rem 0;
+        min-width: 100%;
+    }
+
+    .has-dropdown:hover .dropdown,
+    .dropdown:hover {
+        display: none;
+    }
+
+    .mobile-open .has-dropdown .dropdown {
+        display: block;
+    }
+
+    .dropdown a {
+        padding: 0.75rem 2rem;
+        font-size: 0.875rem;
     }
 
     .mobile-menu-toggle {
         display: flex;
+        z-index: 1000;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
     }
 
     .nav-cta .phone {
         display: none;
     }
+
+    .nav-cta {
+        gap: 1rem;
+    }
+
+    .nav-cta .cta-button {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.75rem;
+    }
+}
 
     .hero-content {
         padding: 3.5rem 2rem;
@@ -1125,6 +1199,48 @@ h3 {
 
     h2::after {
         margin: 1.25rem auto 0;
+    }
+
+    .hero-content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
+    }
+
+    .hero-subheadline {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.8125rem;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .phone {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+
+    .phone-large {
+        font-size: clamp(1.5rem, 5vw, 2rem);
     }
 }
 
@@ -1483,12 +1599,30 @@ h3 {
     }
 
     .quote-form-block {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .quote-form-block h2 {
+        font-size: 1.75rem;
     }
 
     .contact-detail-item {
         flex-direction: column;
         gap: 0.75rem;
+    }
+
+    .contact-detail-item h3 {
+        font-size: 1.125rem;
+    }
+
+    .contact-info-block h2 {
+        font-size: 1.75rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
     }
 }
 
@@ -2632,15 +2766,31 @@ h3 {
     }
 
     .overview-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .overview-cta-box {
         padding: 2rem 1.5rem;
     }
 
+    .accordion-header {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .accordion-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .accordion-content {
+        padding: 0 1.25rem;
+    }
+
+    .accordion-content.open {
+        padding: 0 1.25rem 1.5rem;
+    }
+
     .service-detail-block {
-        padding: 2.5rem 1.75rem;
+        padding: 0;
     }
 
     .capabilities-grid {
@@ -2660,11 +2810,19 @@ h3 {
     }
 
     .service-detail-block h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .block-header {
         gap: 0.75rem;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .service-hero-tagline {
+        font-size: 1.25rem;
     }
 }
 
