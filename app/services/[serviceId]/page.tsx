@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { getServiceById, getAllServiceIds } from "../../data/servicesData";
@@ -12,12 +15,25 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ServicePage({ params }: { params: Promise<{ serviceId: string }> }) {
-  const { serviceId } = await params;
-  const service = getServiceById(serviceId);
+export default function ServicePage({ params }: { params: Promise<{ serviceId: string }> }) {
+  const [serviceId, setServiceId] = useState<string>("");
+  const [service, setService] = useState<any>(null);
+  const [applicationsOpen, setApplicationsOpen] = useState(true);
+  const [benefitsOpen, setBenefitsOpen] = useState(true);
+
+  useEffect(() => {
+    params.then(({ serviceId }) => {
+      setServiceId(serviceId);
+      const svc = getServiceById(serviceId);
+      if (!svc) {
+        notFound();
+      }
+      setService(svc);
+    });
+  }, [params]);
 
   if (!service) {
-    notFound();
+    return null;
   }
 
   return (
@@ -51,10 +67,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
             <div className="service-overview-layout">
               <div className="overview-main-box">
                 <div className="service-icon-header">
-                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M12 6v6l4 2"></path>
-                  </svg>
+                  {service.icon}
                 </div>
                 <h3 className="overview-subtitle">PROFESSIONAL CONCRETE CUTTING</h3>
                 <h2 className="overview-title">{service.title} <span className="title-highlight">EXCELLENCE</span></h2>
