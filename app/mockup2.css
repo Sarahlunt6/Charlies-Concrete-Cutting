@@ -2268,15 +2268,24 @@ h3 {
 
 .capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
 }
 
-.capabilities-grid > * {
-    width: 100%;
+/* Center the last row if it has fewer than 3 items */
+.capabilities-grid > .capability-box:nth-last-child(2):nth-child(3n + 1) {
+    grid-column: 2 / 3;
+}
+
+.capabilities-grid > .capability-box:nth-last-child(1):nth-child(3n + 2) {
+    grid-column: 3 / 4;
+}
+
+/* If there's only one item in the last row, center it */
+.capabilities-grid > .capability-box:nth-last-child(1):nth-child(3n + 1) {
+    grid-column: 2 / 3;
 }
 
 .capability-box {
@@ -2560,8 +2569,22 @@ h3 {
     }
 
     .capabilities-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+
+    /* Reset centering rules for tablet */
+    .capabilities-grid > .capability-box:nth-last-child(2):nth-child(3n + 1),
+    .capabilities-grid > .capability-box:nth-last-child(1):nth-child(3n + 2),
+    .capabilities-grid > .capability-box:nth-last-child(1):nth-child(3n + 1) {
+        grid-column: auto;
+    }
+
+    /* Center last item if odd number on tablet */
+    .capabilities-grid > .capability-box:nth-last-child(1):nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
 
@@ -2606,6 +2629,13 @@ h3 {
     .capabilities-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
+    }
+
+    /* Reset all centering on mobile */
+    .capabilities-grid > .capability-box:nth-last-child(1):nth-child(odd) {
+        grid-column: auto;
+        max-width: 100%;
+        margin: 0;
     }
 
     .capability-box {
