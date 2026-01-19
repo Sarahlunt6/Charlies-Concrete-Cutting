@@ -48,12 +48,39 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
         {/* Service Overview */}
         <section className="service-overview">
           <div className="container">
-            <div className="service-overview-content">
-              <div className="section-label">WHAT WE DO</div>
-              <h2>Service Overview</h2>
-              <div className="overview-description-box">
-                <div className="quote-mark">"</div>
+            <div className="service-overview-layout">
+              <div className="overview-main-box">
+                <div className="service-icon-header">
+                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                </div>
+                <h3 className="overview-subtitle">PROFESSIONAL CONCRETE CUTTING</h3>
+                <h2 className="overview-title">{service.title} <span className="title-highlight">EXCELLENCE</span></h2>
                 <p className="service-full-description">{service.fullDescription}</p>
+              </div>
+
+              <div className="overview-cta-box">
+                <div className="cta-box-header">GET {service.title.toUpperCase()}</div>
+                <div className="cta-box-title">PROFESSIONAL <span className="highlight-text">SERVICE</span> READY</div>
+
+                <a href="tel:8138349011" className="location-phone-btn tampa-btn">
+                  <div className="btn-label">TAMPA:</div>
+                  <div className="btn-number">(813) 834-9011</div>
+                </a>
+
+                <a href="tel:9412545011" className="location-phone-btn sarasota-btn">
+                  <div className="btn-label">SARASOTA:</div>
+                  <div className="btn-number">(941) 254-5011</div>
+                </a>
+
+                <a href="tel:4075053011" className="location-phone-btn orlando-btn">
+                  <div className="btn-label">ORLANDO:</div>
+                  <div className="btn-number">(407) 505-3011</div>
+                </a>
+
+                <div className="cta-box-footer">PROFESSIONAL • RELIABLE • EFFICIENT</div>
               </div>
             </div>
           </div>
@@ -62,21 +89,17 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
         {/* Key Features Grid */}
         <section className="service-features-section">
           <div className="container">
-            <div className="section-label">OUR CAPABILITIES</div>
-            <h2>What Sets Us Apart</h2>
-            <div className="features-grid">
+            <div className="features-section-header">
+              <div className="section-label-red">OUR {service.title.toUpperCase()} CAPABILITIES</div>
+              <h2 className="features-main-title">PROFESSIONAL <span className="title-red">CAPABILITIES</span></h2>
+              <p className="features-subtitle">PRECISION • EXPERIENCE • RELIABILITY – EXPERT SERVICE DELIVERY</p>
+            </div>
+
+            <div className="capabilities-grid">
               {service.features.map((feature, index) => (
-                <div key={index} className="feature-card">
-                  <div className="feature-icon-wrapper">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                  </div>
-                  <div className="feature-content">
-                    <div className="feature-number">{String(index + 1).padStart(2, '0')}</div>
-                    <p>{feature}</p>
-                  </div>
+                <div key={index} className="capability-box">
+                  <div className="capability-header">{feature.split(' ').slice(0, 2).join(' ').toUpperCase()}</div>
+                  <p className="capability-text">{feature}</p>
                 </div>
               ))}
             </div>
