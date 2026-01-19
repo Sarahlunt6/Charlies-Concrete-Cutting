@@ -2780,18 +2780,40 @@ h3 {
 
 @media (max-width: 768px) {
     .service-hero {
-        padding: 4rem 0 3rem;
+        padding: 3rem 1rem 2.5rem;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .service-hero-content {
+        padding: 0 0.5rem;
+    }
+
+    .hero-badge {
+        padding: 0.4rem 1rem;
+        font-size: 0.65rem;
+        margin-bottom: 1rem;
     }
 
     .hero-cta-row {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .hero-phone-btn,
     .hero-quote-btn {
         width: 100%;
         justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+
+    .service-hero-tagline {
+        margin-bottom: 2rem;
     }
 
     .service-overview,
@@ -2859,6 +2881,34 @@ h3 {
 
     .service-hero-tagline {
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-hero {
+        min-height: 350px;
+        padding: 2.5rem 1rem 2rem;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+
+    .service-hero-tagline {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-badge {
+        padding: 0.35rem 0.85rem;
+        font-size: 0.6rem;
+    }
+
+    .hero-phone-btn,
+    .hero-quote-btn {
+        font-size: 0.9rem;
+        padding: 0.875rem 1.25rem;
     }
 }
 
