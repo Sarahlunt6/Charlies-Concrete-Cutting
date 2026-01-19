@@ -2214,6 +2214,41 @@ h3 {
         url('/images/wire-sawing-hero.png') center/cover no-repeat;
 }
 
+/* Chainsawing page specific hero */
+.service-hero-chainsawing {
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
+        url('/images/chainsawing-hero.png') center/cover no-repeat;
+}
+
+/* Demolition & Removal page specific hero */
+.service-hero-demolition-removal {
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
+        url('/images/demolition-removal-hero.png') center/cover no-repeat;
+}
+
+/* GPR Scanning page specific hero */
+.service-hero-gpr-scanning {
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
+        url('/images/gpr-scanning-hero.png') center/cover no-repeat;
+}
+
+/* Safety Grooving page specific hero */
+.service-hero-safety-grooving {
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
+        url('/images/safety-grooving-hero.png') center/cover no-repeat;
+}
+
+/* Pour Back & Patching page specific hero */
+.service-hero-pour-back-patching {
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.65) 0%, rgba(58, 33, 27, 0.65) 50%, rgba(72, 42, 36, 0.65) 100%),
+        url('/images/pour-back-patching-hero.png') center/cover no-repeat;
+}
+
 .hero-background-pattern {
     position: absolute;
     top: 0;
