@@ -5,8 +5,8 @@ import { useState } from "react";
 import { Service } from "../../data/servicesData";
 
 export default function ServiceContent({ service }: { service: Service }) {
-  const [applicationsOpen, setApplicationsOpen] = useState(true);
-  const [benefitsOpen, setBenefitsOpen] = useState(true);
+  const [applicationsOpen, setApplicationsOpen] = useState(false);
+  const [benefitsOpen, setBenefitsOpen] = useState(false);
 
   return (
     <main>
@@ -40,7 +40,7 @@ export default function ServiceContent({ service }: { service: Service }) {
                 {service.icon}
               </div>
               <h3 className="overview-subtitle">PROFESSIONAL CONCRETE CUTTING</h3>
-              <h2 className="overview-title">{service.title} <span className="title-highlight">EXCELLENCE</span></h2>
+              <h2 className="overview-title">{service.title} <span className="title-highlight">{service.highlightWord}</span></h2>
               <p className="service-full-description">{service.fullDescription}</p>
             </div>
 

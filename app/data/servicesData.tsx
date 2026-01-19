@@ -8,6 +8,7 @@ export interface Service {
   applications: string[];
   benefits: string[];
   icon: React.ReactNode;
+  highlightWord: string;
 }
 
 export const servicesData: Service[] = [
@@ -17,6 +18,7 @@ export const servicesData: Service[] = [
     tagline: "Precision Cutting Up to 27 Inches Deep",
     description: "Professional slab cutting for trenching, openings, and expansion joints in concrete and asphalt.",
     fullDescription: "Slab cutting through reinforced concrete, asphalt, precast concrete, and lightweight panels using advanced cutting technology and professional techniques for precise, clean cuts through structural materials up to 27 inches thick. Our professional team handles all types of slab cutting projects including trenching, openings, expansion joints, decorative cutting, and specialized applications using electric, gas, diesel, and propane-powered cutting equipment for clean, efficient, and quiet operations.",
+    highlightWord: "PRECISION",
     features: [
       "Cutting through reinforced concrete, asphalt, precast concrete, and lightweight panels",
       "Precision cutting through ¼\" to 27\" thick slabs with advanced equipment",
@@ -57,6 +59,7 @@ export const servicesData: Service[] = [
     tagline: "Clean Openings Through Reinforced Concrete",
     description: "Expert wall cutting for doors, windows, ducts, and penetrations up to 27″ deep.",
     fullDescription: "Wall concrete cutting creates precision openings through reinforced concrete, precast concrete, brick, cinderblock, and other structural materials with clean, accurate cuts for doors, windows, ducts, pipes, and structural modifications. Our professional team uses diesel hydraulic, electric hydraulic, and air powered saws to cut openings up to 27″ deep from one side, handling everything from door and window openings to large diameter pipe penetrations with clean, efficient, and quiet operations.",
+    highlightWord: "EXPERTISE",
     features: [
       "Openings cut through floors and walls with precision accuracy",
       "Openings cut for doors, windows, dock levelers, and crawl space access",
@@ -100,6 +103,7 @@ export const servicesData: Service[] = [
     tagline: "Diamond Precision Drilling",
     description: "Clean circular cuts through any structural material for utility penetrations and HVAC.",
     fullDescription: "Removing a cylinder of concrete is core drilling which we use diamond core drills to precisely cut through concrete smoothly and efficiently. We engage state-of-the-art diamond cutting innovations to help make our work as accurate as possible. Core drilling is the procedure of generating accurate circular cuts in concrete to make clean holes for a number of applications. Our professional staff effectively and carefully cuts through reinforced concrete, precast concrete, asphalt, brick, cinderblock, and other structural materials.",
+    highlightWord: "ACCURACY",
     features: [
       "Holes cut in a complete range of diameters, at any angle required, and at any thickness required",
       "Holes cut thru walls, floors for electrical, plumbing, heating, sewer, sprinklers, and other unique applications",
@@ -139,6 +143,7 @@ export const servicesData: Service[] = [
     tagline: "Unlimited Depth Cutting",
     description: "Large-scale demolition and structural modifications including foundation and bridge work.",
     fullDescription: "Wire sawing for deep cutting in steel, concrete, and other building materials provides unlimited depth capabilities with smooth cut faces from horizontal, vertical, and angled cutting positions – the most efficient method for removing large concrete constructions. Our professional team specializes in large dimension sawing of pipes and tubes, foundation removal, bridge demolition, and complex structural cutting projects with no limit to cutting depth, delivering precise results for the most demanding construction challenges.",
+    highlightWord: "POWER",
     features: [
       "Deep sawing in steel, concrete, and other building materials",
       "Large dimension sawing of pipes and tubes with unlimited depth",
@@ -180,6 +185,7 @@ export const servicesData: Service[] = [
     tagline: "Versatile Cutting in Tight Spaces",
     description: "Perfect for tight or hard-to-reach areas, cuts materials ¼\" to 24\" thick.",
     fullDescription: "Chainsawing is the most versatile concrete cutting method, allowing us to cut through reinforced concrete, precast concrete, and lightweight panels with portable power and precision in tight spaces where other methods can't reach. Our professional team uses electric and diesel chain saws to efficiently cut through slabs and walls from ¼\" to 24\" thick with clean, efficient, and quiet operations.",
+    highlightWord: "VERSATILITY",
     features: [
       "Cutting through ¼\" to 24\" thick slabs with portable power",
       "Suspended slab openings and duct openings",
@@ -216,6 +222,7 @@ export const servicesData: Service[] = [
     tagline: "Professional Demolition Services",
     description: "Complete demolition with debris removal and site cleanup for all project sizes.",
     fullDescription: "Concrete removal and demolition is our specialty – we safely and efficiently remove concrete slabs, foundations, walls, driveways, sidewalks, and structures using the right equipment and techniques for each specific job. Our professional team handles complete concrete removal projects from small residential patios to large commercial structures, providing controlled demolition, debris removal, and site cleanup with minimal disruption to surrounding areas.",
+    highlightWord: "EFFICIENCY",
     features: [
       "Complete concrete slab and foundation removal",
       "Driveway, sidewalk, and patio demolition",
@@ -255,6 +262,7 @@ export const servicesData: Service[] = [
     tagline: "Non-Destructive Testing",
     description: "Locate rebar, conduits, and cables before cutting for safety and accuracy.",
     fullDescription: "Ground Penetrating Radar Scanning is a non-destructive means to locate potential targets within concrete structures prior to cutting, coring or breaking. We locate reinforcement steel, conduits, pre/post tension cables, PVC, and wire mesh. Ground Penetrating Radar works similar to a fish finder – the scanner sends RADAR into concrete and bounces off targets. Our trained employees analyze patterns, depth, symmetry, and brightness to provide accurate target location before any cutting begins.",
+    highlightWord: "SAFETY",
     features: [
       "Non-destructive location of reinforcement steel, conduits, and cables",
       "Locates pre/post tension cables, PVC, and wire mesh within concrete",
@@ -298,6 +306,7 @@ export const servicesData: Service[] = [
     tagline: "Enhanced Surface Traction",
     description: "Precision grooving for parking structures and walkways with ADA-compliant solutions.",
     fullDescription: "Safety groove and texture concrete, precast concrete, and other materials with precision cutting techniques to create non-slip surfaces, ADA compliance features, and decorative patterns that meet your exact specifications. Our professional team creates safety grooves, ADA strips, custom patterns, and surface texturing that makes concrete and other surfaces more comfortable and safer to walk on while eliminating high spots for perfectly even surfaces.",
+    highlightWord: "COMPLIANCE",
     features: [
       "ADA strips for compliance with accessibility standards",
       "Cut to specified patterns to meet your exact requirements",
@@ -343,6 +352,7 @@ export const servicesData: Service[] = [
     tagline: "Seamless Surface Restoration",
     description: "Professional concrete patching and finishing to restore surfaces after cutting.",
     fullDescription: "Pour back and concrete patching services provide precise replacement of concrete for electrical and plumbing trenches, creating seamless repairs that restore structural integrity and aesthetic continuity to your concrete surfaces. Our professional team specializes in concrete filled steel bollard installation, precision machine pads, test core replacements, and complete trench restoration using proper concrete mixing, placement, and finishing techniques for lasting results.",
+    highlightWord: "RESTORATION",
     features: [
       "Replacement of concrete for electrical and plumbing trenches",
       "Concrete filled steel bollard installation for security and traffic control",
