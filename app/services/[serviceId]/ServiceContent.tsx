@@ -86,9 +86,8 @@ export default function ServiceContent({ service }: { service: Service }) {
               </div>
             ))}
             <Link href="/services" className="capability-box view-all-box">
-              <div className="capability-header">VIEW ALL</div>
-              <p className="capability-text">Explore Our Complete Range of Professional Services</p>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <div className="capability-header">VIEW ALL SERVICES</div>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
