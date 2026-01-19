@@ -28,7 +28,7 @@ export default function Home() {
           <div className="container">
             <h2>Complete Concrete Cutting Solutions</h2>
             <div className="services-grid">
-              <div className="service-card">
+              <Link href="/services/slab-cutting" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <circle cx="32" cy="20" r="14" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -39,9 +39,9 @@ export default function Home() {
                 </div>
                 <h3>Slab Cutting</h3>
                 <p>Precision cutting through concrete, asphalt, and structural materials up to 27 inches thick for trenching, openings, and expansion joints</p>
-              </div>
+              </Link>
 
-              <div className="service-card">
+              <Link href="/services/wall-cutting" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <rect x="8" y="16" width="48" height="36" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -54,9 +54,9 @@ export default function Home() {
                 </div>
                 <h3>Wall Cutting</h3>
                 <p>Clean openings through reinforced concrete and structural walls up to 27″ deep for doors, windows, ducts, and pipe penetrations</p>
-              </div>
+              </Link>
 
-              <div className="service-card">
+              <Link href="/services/core-drilling" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <rect x="8" y="24" width="48" height="16" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -68,9 +68,9 @@ export default function Home() {
                 </div>
                 <h3>Core Drilling</h3>
                 <p>Diamond precision drilling for clean circular cuts through any structural material for utility penetrations, HVAC, and plumbing</p>
-              </div>
+              </Link>
 
-              <div className="service-card">
+              <Link href="/services/wire-sawing" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <rect x="12" y="36" width="40" height="16" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -82,9 +82,9 @@ export default function Home() {
                 </div>
                 <h3>Wire Sawing</h3>
                 <p>Unlimited depth cutting for large-scale demolition and structural modifications including foundation removal and bridge work</p>
-              </div>
+              </Link>
 
-              <div className="service-card">
+              <Link href="/services/chainsawing" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <rect x="8" y="28" width="48" height="20" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -96,9 +96,9 @@ export default function Home() {
                 </div>
                 <h3>Chainsawing</h3>
                 <p>Versatile cutting in tight spaces through materials ¼" to 24″ thick including reinforced concrete and precast panels</p>
-              </div>
+              </Link>
 
-              <div className="service-card">
+              <Link href="/services/gpr-scanning" className="service-card">
                 <div className="service-icon">
                   <svg viewBox="0 0 64 64" fill="currentColor">
                     <rect x="8" y="32" width="48" height="20" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -111,7 +111,7 @@ export default function Home() {
                 </div>
                 <h3>GPR Scanning</h3>
                 <p>Non-destructive scanning to locate rebar, conduits, and cables before cutting for safety verification and target location</p>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -145,15 +145,15 @@ export default function Home() {
             <div className="areas-grid">
               <div className="area-card">
                 <h3>Tampa</h3>
-                <p><a href="tel:8138349011" className="radius-link">(813) 834-9011</a></p>
+                <a href="tel:8138349011" className="area-phone-button">(813) 834-9011</a>
               </div>
               <div className="area-card">
                 <h3>Sarasota</h3>
-                <p><a href="tel:9412545011" className="radius-link">(941) 254-5011</a></p>
+                <a href="tel:9412545011" className="area-phone-button">(941) 254-5011</a>
               </div>
               <div className="area-card">
                 <h3>Orlando</h3>
-                <p><a href="tel:4075053011" className="radius-link">(407) 505-3011</a></p>
+                <a href="tel:4075053011" className="area-phone-button">(407) 505-3011</a>
               </div>
             </div>
             <div className="service-radius">

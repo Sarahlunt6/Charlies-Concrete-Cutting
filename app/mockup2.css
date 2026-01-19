@@ -895,15 +895,16 @@ h3 {
 .phone-large {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 4vw, 2.75rem);
-    color: var(--white);
+    color: var(--golden-ochre);
     text-decoration: none;
     letter-spacing: 1px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+    transition: all 0.3s;
 }
 
 .phone-large:hover {
     transform: scale(1.05);
+    color: var(--white);
 }
 
 .cta-final .cta-button {
@@ -2587,4 +2588,56 @@ h3 {
     .radius-cta {
         flex-direction: column;
     }
+}
+
+/* Gallery Coming Soon Styles */
+.gallery-coming-soon {
+  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.coming-soon-content h3 {
+  color: var(--rust-orange);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.coming-soon-content p {
+  color: #999;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.gallery-coming-soon:hover .coming-soon-content h3 {
+  color: var(--golden-ochre);
+}
+
+/* Area Phone Button Styles */
+.area-phone-button {
+  display: inline-block;
+  background: var(--rust-orange);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.area-phone-button:hover {
+  background: var(--golden-ochre);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }

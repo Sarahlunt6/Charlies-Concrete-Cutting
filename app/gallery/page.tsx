@@ -39,10 +39,9 @@ export default function Gallery() {
             <div className="gallery-grid">
               {galleryItems.map((item) => (
                 <div key={item.id} className="gallery-item">
-                  <div className="gallery-image">
-                    <img src="/images/placeholder.jpg" alt={item.title} />
-                    <div className="gallery-overlay">
-                      <h3>{item.title}</h3>
+                  <div className="gallery-image gallery-coming-soon">
+                    <div className="coming-soon-content">
+                      <h3>Photos Coming Soon</h3>
                       <p>{item.category}</p>
                     </div>
                   </div>
