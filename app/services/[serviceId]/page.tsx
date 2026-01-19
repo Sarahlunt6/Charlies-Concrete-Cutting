@@ -124,41 +124,67 @@ export default function ServicePage({ params }: { params: Promise<{ serviceId: s
           <div className="container">
             <div className="service-details-grid">
               <div className="service-detail-block applications-block">
-                <div className="block-header">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                <button
+                  className="accordion-header"
+                  onClick={() => setApplicationsOpen(!applicationsOpen)}
+                  aria-expanded={applicationsOpen}
+                >
+                  <h2>APPLICATIONS</h2>
+                  <svg
+                    className={`accordion-arrow ${applicationsOpen ? 'open' : ''}`}
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
-                  <h2>Applications</h2>
+                </button>
+                <div className={`accordion-content ${applicationsOpen ? 'open' : ''}`}>
+                  <p className="block-intro">Our {service.title.toLowerCase()} services are ideal for:</p>
+                  <ul className="service-applications-list">
+                    {service.applications.map((application, index) => (
+                      <li key={index}>
+                        <span className="check-icon">✓</span>
+                        <span>{application}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="block-intro">Our {service.title.toLowerCase()} services are ideal for:</p>
-                <ul className="service-applications-list">
-                  {service.applications.map((application, index) => (
-                    <li key={index}>
-                      <span className="check-icon">✓</span>
-                      <span>{application}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               <div className="service-detail-block benefits-block">
-                <div className="block-header">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
+                <button
+                  className="accordion-header"
+                  onClick={() => setBenefitsOpen(!benefitsOpen)}
+                  aria-expanded={benefitsOpen}
+                >
+                  <h2>BENEFITS</h2>
+                  <svg
+                    className={`accordion-arrow ${benefitsOpen ? 'open' : ''}`}
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
-                  <h2>Benefits</h2>
+                </button>
+                <div className={`accordion-content ${benefitsOpen ? 'open' : ''}`}>
+                  <p className="block-intro">Why choose our {service.title.toLowerCase()} services:</p>
+                  <ul className="service-benefits-list">
+                    {service.benefits.map((benefit, index) => (
+                      <li key={index}>
+                        <span className="star-icon">★</span>
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="block-intro">Why choose our {service.title.toLowerCase()} services:</p>
-                <ul className="service-benefits-list">
-                  {service.benefits.map((benefit, index) => (
-                    <li key={index}>
-                      <span className="star-icon">★</span>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>
