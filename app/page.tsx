@@ -10,6 +10,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main>
+        <h1 className="sr-only">Charlie&apos;s Concrete Cutting - Professional Concrete Cutting Services in Florida</h1>
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-image">
@@ -17,7 +18,7 @@ export default function Home() {
             <Link href="/contact#quote" className="hero-image-cta cta-button">GET A QUOTE</Link>
           </div>
           <div className="hero-content">
-            <h1>Charlie&apos;s Concrete Cutting</h1>
+            <h2>Charlie&apos;s Concrete Cutting</h2>
             <p className="hero-subheadline">A Name You Can Trust</p>
             <Link href="/contact#quote" className="cta-button">GET A QUOTE</Link>
           </div>
