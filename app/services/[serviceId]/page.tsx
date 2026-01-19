@@ -28,9 +28,6 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
         <section className="service-hero">
           <div className="container">
             <div className="service-hero-content">
-              <div className="service-hero-icon">
-                {service.icon}
-              </div>
               <h1>{service.title}</h1>
               <p className="service-hero-tagline">{service.tagline}</p>
             </div>

@@ -16,29 +16,31 @@ export const servicesData: Service[] = [
     title: "Slab Cutting",
     tagline: "Precision Cutting Up to 27 Inches Deep",
     description: "Professional slab cutting for trenching, openings, and expansion joints in concrete and asphalt.",
-    fullDescription: "Our slab cutting services provide precision cutting through concrete, asphalt, and other structural materials up to 27 inches thick. Using state-of-the-art diamond blade technology, we deliver clean, accurate cuts for a variety of applications including trenching, creating openings, and installing expansion joints.",
+    fullDescription: "Slab cutting through reinforced concrete, asphalt, precast concrete, and lightweight panels using advanced cutting technology and professional techniques for precise, clean cuts through structural materials up to 27 inches thick. Our professional team handles all types of slab cutting projects including trenching, openings, expansion joints, decorative cutting, and specialized applications using electric, gas, diesel, and propane-powered cutting equipment for clean, efficient, and quiet operations.",
     features: [
-      "Up to 27\" cutting depth capability",
-      "Diamond blade technology for clean, precise cuts",
-      "Minimal vibration and noise during operation",
-      "Indoor and outdoor applications",
-      "Dust control systems available",
-      "Professional-grade equipment"
+      "Cutting through reinforced concrete, asphalt, precast concrete, and lightweight panels",
+      "Precision cutting through ¼\" to 27\" thick slabs with advanced equipment",
+      "Trenching, suspended slab openings, duct openings, elevator openings",
+      "Expansion joints and decorative cutting applications",
+      "Loop detectors, stairwells, machine pads installation cuts",
+      "Patch removal on roads and highway maintenance projects",
+      "Electric, Gas, Diesel, and Propane powered cutting systems",
+      "Commercial, industrial, medical, and residential – clean, efficient, quiet"
     ],
     applications: [
-      "Expansion joint installation",
-      "Trenching for utilities",
-      "Creating openings in floors",
-      "Removing damaged concrete sections",
-      "HVAC and plumbing rough-ins",
-      "Decorative concrete patterns"
+      "STRUCTURAL MATERIALS - Cutting through reinforced concrete, asphalt, precast concrete, and lightweight panels",
+      "PRECISION THICKNESS - Professional cutting through ¼\" to 27\" thick slabs with advanced equipment",
+      "OPENINGS & TRENCHING - Trenching, suspended slab openings, duct openings, elevator openings",
+      "EXPANSION JOINTS - Expansion joints, decorative cutting, and precision joint installations",
+      "SPECIALIZED CUTS - Loop detectors, stairwells, machine pads, patch removal on roads",
+      "ALL SECTORS - Commercial, industrial, medical, and residential – clean, efficient, quiet operations"
     ],
     benefits: [
-      "Minimal disruption to surrounding areas",
-      "Fast, efficient cutting process",
-      "Clean edges for professional finish",
-      "Safe operation with experienced technicians",
-      "Complete cleanup included"
+      "Advanced cutting technology for structural materials up to 27 inches thick",
+      "Professional techniques for precise, clean cuts",
+      "Multiple power options: electric, gas, diesel, and propane",
+      "Handles all types of slab cutting projects",
+      "Clean, efficient, and quiet operations"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -54,29 +56,32 @@ export const servicesData: Service[] = [
     title: "Wall Cutting",
     tagline: "Clean Openings Through Reinforced Concrete",
     description: "Expert wall cutting for doors, windows, ducts, and penetrations up to 27″ deep.",
-    fullDescription: "Our wall cutting services deliver clean, precise openings through reinforced concrete and structural walls. Whether you need doorways, windows, HVAC ducts, or pipe penetrations, we provide professional cutting up to 27 inches deep while maintaining structural integrity.",
+    fullDescription: "Wall concrete cutting creates precision openings through reinforced concrete, precast concrete, brick, cinderblock, and other structural materials with clean, accurate cuts for doors, windows, ducts, pipes, and structural modifications. Our professional team uses diesel hydraulic, electric hydraulic, and air powered saws to cut openings up to 27″ deep from one side, handling everything from door and window openings to large diameter pipe penetrations with clean, efficient, and quiet operations.",
     features: [
-      "Vertical and horizontal cutting capabilities",
-      "Up to 27\" cutting depth",
-      "Cuts through heavily reinforced concrete",
-      "Minimal dust and debris",
-      "Structural integrity maintained",
-      "Track-mounted cutting systems"
+      "Openings cut through floors and walls with precision accuracy",
+      "Openings cut for doors, windows, dock levelers, and crawl space access",
+      "Brick ledges, ducts and pipes through floors and walls",
+      "Cutting to remove part or all of existing walls and curb",
+      "Cutting openings for large diameter pipes and utilities",
+      "Diesel hydraulic, electric hydraulic and air powered saws",
+      "Able to cut to a maximum depth of 27″ from one side",
+      "Commercial, industrial, medical, and residential work – clean, efficient, and quiet"
     ],
     applications: [
-      "Door and window openings",
-      "HVAC ductwork installations",
-      "Pipe and conduit penetrations",
-      "Elevator shaft modifications",
-      "Stairwell openings",
-      "Building renovations"
+      "DOOR & WINDOW OPENINGS - Precision openings cut for doors, windows, dock levelers, and crawl space access",
+      "UTILITY PENETRATIONS - Brick ledges, ducts and pipes through floors and walls for all building systems",
+      "WALL REMOVAL - Cutting to remove part or all of existing walls and curb for remodeling projects",
+      "LARGE DIAMETER PIPES - Cutting openings for large diameter pipes, utilities, and mechanical systems",
+      "MAXIMUM DEPTH 27\" - Able to cut to a maximum depth of 27″ from one side through any structural material",
+      "MULTIPLE POWER TYPES - Diesel hydraulic, electric hydraulic and air powered saws for any situation",
+      "ALL SECTORS - Commercial, industrial, medical, and residential work – clean, efficient, and quiet operations"
     ],
     benefits: [
-      "Clean, professional edges",
-      "No structural damage",
-      "Fast project completion",
-      "Precise dimensional accuracy",
-      "Safe, controlled cutting process"
+      "Precision openings through reinforced concrete and structural materials",
+      "Clean, accurate cuts for doors, windows, ducts, and pipes",
+      "Multiple power options: diesel hydraulic, electric hydraulic, air powered",
+      "Maximum cutting depth of 27″ from one side",
+      "Clean, efficient, and quiet operations"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -94,29 +99,29 @@ export const servicesData: Service[] = [
     title: "Core Drilling",
     tagline: "Diamond Precision Drilling",
     description: "Clean circular cuts through any structural material for utility penetrations and HVAC.",
-    fullDescription: "Our core drilling services provide diamond-precision drilling for clean circular cuts through any structural material. From small utility penetrations to large HVAC openings, we offer diameter sizes from 1 inch to 60 inches with any angle drilling capability.",
+    fullDescription: "Removing a cylinder of concrete is core drilling which we use diamond core drills to precisely cut through concrete smoothly and efficiently. We engage state-of-the-art diamond cutting innovations to help make our work as accurate as possible. Core drilling is the procedure of generating accurate circular cuts in concrete to make clean holes for a number of applications. Our professional staff effectively and carefully cuts through reinforced concrete, precast concrete, asphalt, brick, cinderblock, and other structural materials.",
     features: [
-      "Diameter sizes from 1\" to 60\"",
-      "Any angle drilling capability",
-      "Wet or dry drilling options",
-      "Precision depth control",
-      "Minimal vibration",
-      "Core removal included"
+      "Holes cut in a complete range of diameters, at any angle required, and at any thickness required",
+      "Holes cut thru walls, floors for electrical, plumbing, heating, sewer, sprinklers, and other unique applications",
+      "Holes can be cut upside down thru ceilings if no access is available from above",
+      "110V, 220V, hydraulic, and air powered drills",
+      "Commercial, industrial, medical and residential work",
+      "Clean, efficient and quiet operations"
     ],
     applications: [
-      "Utility penetrations",
-      "HVAC installations",
-      "Plumbing pipe routing",
-      "Electrical conduit paths",
-      "Anchor bolt installation",
-      "Testing and sampling"
+      "ANY DIAMETER - Complete range of hole diameters from 1/4\" to 60\" – any size, any angle, any thickness required",
+      "ALL APPLICATIONS - Electrical, plumbing, heating, sewer, sprinklers, and other specialized applications",
+      "ANY POSITION - Holes cut upside down through ceilings when no access available from above",
+      "ALL POWER TYPES - 110V, 220V, hydraulic, and air powered drills for any job requirement",
+      "ALL SECTORS - Commercial, industrial, medical and residential work handled professionally",
+      "CLEAN & QUIET - Clean, efficient and quiet operations – minimal disruption to your operations"
     ],
     benefits: [
-      "Clean, perfectly round holes",
-      "No structural cracking",
-      "Fast drilling process",
-      "Accurate positioning",
-      "Complete debris removal"
+      "State-of-the-art diamond cutting technology",
+      "Precisely cut through concrete smoothly and efficiently",
+      "Complete range of diameters and angles",
+      "Cuts through reinforced concrete, precast, asphalt, brick, and cinderblock",
+      "Professional and accurate work"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -133,29 +138,31 @@ export const servicesData: Service[] = [
     title: "Wire Sawing",
     tagline: "Unlimited Depth Cutting",
     description: "Large-scale demolition and structural modifications including foundation and bridge work.",
-    fullDescription: "Wire sawing technology allows for unlimited depth cutting, making it ideal for large-scale demolition and structural modification projects. This method is perfect for cutting through heavily reinforced concrete, foundations, and bridge structures where traditional methods fall short.",
+    fullDescription: "Wire sawing for deep cutting in steel, concrete, and other building materials provides unlimited depth capabilities with smooth cut faces from horizontal, vertical, and angled cutting positions – the most efficient method for removing large concrete constructions. Our professional team specializes in large dimension sawing of pipes and tubes, foundation removal, bridge demolition, and complex structural cutting projects with no limit to cutting depth, delivering precise results for the most demanding construction challenges.",
     features: [
-      "Unlimited cutting depth",
-      "Cuts through heavy reinforcement",
-      "Minimal vibration",
-      "Remote operation capability",
-      "Versatile cutting angles",
-      "Large structural capacity"
+      "Deep sawing in steel, concrete, and other building materials",
+      "Large dimension sawing of pipes and tubes with unlimited depth",
+      "Smooth cut faces from horizontal, vertical, and angled positions",
+      "Most efficient removal of large concrete constructions",
+      "Foundation and bridge removal projects",
+      "Complex structural cutting with no depth limitations",
+      "Commercial, industrial, medical, and residential applications",
+      "Precision cutting for the most demanding construction challenges"
     ],
     applications: [
-      "Foundation removal",
-      "Bridge demolition",
-      "Large beam cutting",
-      "Underwater cutting",
-      "Nuclear facility decommissioning",
-      "Industrial plant modifications"
+      "UNLIMITED DEPTH - No limit to cutting depth – horizontal, vertical, and angled cutting positions",
+      "STEEL & CONCRETE - Deep sawing in steel, concrete, and other structural building materials",
+      "LARGE DIMENSIONS - Large dimension sawing of pipes, tubes, and massive structural components",
+      "SMOOTH CUT FACE - Provides smooth, precise cut faces with professional finishing quality",
+      "FOUNDATION REMOVAL - Most efficient way to remove large concrete constructions, foundations, bridges",
+      "ALL SECTORS - Commercial, industrial, medical, residential – precision for demanding projects"
     ],
     benefits: [
-      "Handles oversized cuts",
-      "Minimal impact on surroundings",
-      "Safe for sensitive structures",
-      "Cost-effective for large projects",
-      "Precision cutting capability"
+      "Unlimited depth cutting capabilities",
+      "Smooth cut faces from any angle - horizontal, vertical, angled",
+      "Most efficient method for removing large concrete constructions",
+      "Large dimension sawing of pipes, tubes, and structural components",
+      "Precision results for the most demanding construction challenges"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -172,29 +179,26 @@ export const servicesData: Service[] = [
     title: "Chainsawing",
     tagline: "Versatile Cutting in Tight Spaces",
     description: "Perfect for tight or hard-to-reach areas, cuts materials ¼\" to 24\" thick.",
-    fullDescription: "Concrete chainsawing provides versatile cutting solutions for tight spaces and hard-to-reach areas. Our diamond chain saws cut through materials from ¼ inch to 24 inches thick, including reinforced concrete and precast panels, making them ideal for renovation and retrofit projects.",
+    fullDescription: "Chainsawing is the most versatile concrete cutting method, allowing us to cut through reinforced concrete, precast concrete, and lightweight panels with portable power and precision in tight spaces where other methods can't reach. Our professional team uses electric and diesel chain saws to efficiently cut through slabs and walls from ¼\" to 24\" thick with clean, efficient, and quiet operations.",
     features: [
-      "Cuts materials ¼\" to 24\" thick",
-      "Portable and maneuverable",
-      "Fast cutting speeds",
-      "Minimal setup required",
-      "Wet or dry cutting",
-      "Perfect for tight spaces"
+      "Cutting through ¼\" to 24\" thick slabs with portable power",
+      "Suspended slab openings and duct openings",
+      "Electric and diesel powered saws",
+      "Commercial, industrial, medical, and residential work",
+      "Clean, efficient, and quiet operations"
     ],
     applications: [
-      "Window and door openings",
-      "Renovation projects",
-      "Vent and duct installations",
-      "Precast panel cutting",
-      "Tight space cutting",
-      "Emergency access creation"
+      "ANY THICKNESS - Cutting through ¼\" to 24\" thick slabs with precision and portable power",
+      "OPENINGS - Suspended slab openings and duct openings",
+      "ALL POWER TYPES - Electric and Diesel powered saws for any situation",
+      "ALL SECTORS - Commercial, industrial, medical, and residential – clean, efficient, quiet"
     ],
     benefits: [
-      "Highly portable equipment",
-      "Quick project completion",
-      "Access to confined areas",
-      "Versatile application",
-      "Cost-effective solution"
+      "Most versatile concrete cutting method",
+      "Portable power for any location",
+      "Works in tight spaces where other methods can't reach",
+      "Clean and quiet operations",
+      "Efficient cutting through reinforced and precast concrete"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -211,29 +215,31 @@ export const servicesData: Service[] = [
     title: "Demolition & Removal",
     tagline: "Professional Demolition Services",
     description: "Complete demolition with debris removal and site cleanup for all project sizes.",
-    fullDescription: "Our demolition and removal services provide complete solutions for residential and commercial projects. From selective demolition to complete teardowns, we handle every aspect including debris hauling, disposal, and thorough site cleanup.",
+    fullDescription: "Concrete removal and demolition is our specialty – we safely and efficiently remove concrete slabs, foundations, walls, driveways, sidewalks, and structures using the right equipment and techniques for each specific job. Our professional team handles complete concrete removal projects from small residential patios to large commercial structures, providing controlled demolition, debris removal, and site cleanup with minimal disruption to surrounding areas.",
     features: [
-      "Complete demolition services",
-      "Selective demolition capability",
-      "Debris hauling and disposal",
-      "Site cleanup included",
-      "Recycling when possible",
-      "Safe, controlled demolition"
+      "Complete concrete slab and foundation removal",
+      "Driveway, sidewalk, and patio demolition",
+      "Concrete wall and structure removal",
+      "Controlled demolition techniques to protect surrounding structures",
+      "Debris haul-away and site cleanup services",
+      "Heavy equipment operation – excavators, jackhammers, breakers",
+      "Commercial, industrial, medical and residential projects",
+      "Dust control and minimal disruption operations"
     ],
     applications: [
-      "Building demolition",
-      "Interior strip-outs",
-      "Concrete structure removal",
-      "Foundation demolition",
-      "Parking structure removal",
-      "Industrial facility demolition"
+      "COMPLETE STRUCTURES - Full concrete structure demolition – foundations, walls, slabs, and multi-story buildings",
+      "CONTROLLED DEMOLITION - Precise demolition techniques to protect surrounding structures and minimize disruption",
+      "SITE PREPARATION - Complete site clearing, grading, and preparation for new construction projects",
+      "DEBRIS REMOVAL - Full debris haul-away, sorting, recycling, and disposal services included",
+      "HEAVY EQUIPMENT - Excavators, bulldozers, jackhammers, breakers, and specialized demolition equipment",
+      "ALL SECTORS - Commercial, industrial, medical, and residential – safe, efficient, clean operations"
     ],
     benefits: [
-      "All-inclusive service",
-      "Licensed and insured",
-      "Environmentally responsible",
-      "Fast project completion",
-      "Complete site restoration"
+      "Safe and efficient concrete removal specialty",
+      "Right equipment and techniques for each specific job",
+      "Small residential to large commercial projects",
+      "Controlled demolition with minimal disruption",
+      "Complete debris removal and site cleanup"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -248,29 +254,32 @@ export const servicesData: Service[] = [
     title: "GPR Scanning",
     tagline: "Non-Destructive Testing",
     description: "Locate rebar, conduits, and cables before cutting for safety and accuracy.",
-    fullDescription: "Ground Penetrating Radar (GPR) scanning provides non-destructive testing to locate rebar, post-tension cables, conduits, and other embedded items before cutting. This critical safety step prevents costly mistakes and ensures project success.",
+    fullDescription: "Ground Penetrating Radar Scanning is a non-destructive means to locate potential targets within concrete structures prior to cutting, coring or breaking. We locate reinforcement steel, conduits, pre/post tension cables, PVC, and wire mesh. Ground Penetrating Radar works similar to a fish finder – the scanner sends RADAR into concrete and bounces off targets. Our trained employees analyze patterns, depth, symmetry, and brightness to provide accurate target location before any cutting begins.",
     features: [
-      "Non-destructive testing method",
-      "Real-time imaging",
-      "Locates multiple materials",
-      "Accurate depth measurement",
-      "Immediate results",
-      "Detailed reporting available"
+      "Non-destructive location of reinforcement steel, conduits, and cables",
+      "Locates pre/post tension cables, PVC, and wire mesh within concrete",
+      "Real-time data analysis with trained, experienced technicians",
+      "Affordable alternative to X-ray scanning (up to 3x less expensive)",
+      "No building evacuation required – safe for occupied spaces",
+      "Works on slabs on grade without needing access to both sides",
+      "Prevents costly damage to utilities and structural elements",
+      "Essential for safe cutting, coring, and demolition planning"
     ],
     applications: [
-      "Pre-cut safety verification",
-      "Rebar location",
-      "Post-tension cable detection",
-      "Utility mapping",
-      "Conduit and pipe location",
-      "Structural analysis"
+      "REINFORCEMENT STEEL - Locate rebar, wire mesh, and steel reinforcement within concrete structures",
+      "CONDUITS & CABLES - Locate electrical conduits, pre/post tension cables, and PVC within slabs and walls",
+      "NON-DESTRUCTIVE - Safe scanning method that doesn't damage concrete or require building evacuation",
+      "COST EFFECTIVE - Up to 3x less expensive than X-ray scanning with faster turnaround times",
+      "REAL-TIME DATA - Immediate results with trained technicians analyzing patterns and depths",
+      "ALL STRUCTURES - Works on slabs, walls, foundations – commercial, industrial, medical, residential"
     ],
     benefits: [
-      "Prevents costly mistakes",
-      "Ensures worker safety",
-      "Protects existing utilities",
-      "Reduces project risk",
-      "Peace of mind"
+      "Non-destructive means to locate targets before cutting",
+      "Works like a fish finder sending RADAR into concrete",
+      "Trained employees analyze patterns, depth, symmetry, and brightness",
+      "Up to 3x less expensive than X-ray scanning",
+      "Safe for occupied spaces - no evacuation required",
+      "Prevents costly damage to utilities and structural elements"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -288,29 +297,32 @@ export const servicesData: Service[] = [
     title: "Safety Grooving",
     tagline: "Enhanced Surface Traction",
     description: "Precision grooving for parking structures and walkways with ADA-compliant solutions.",
-    fullDescription: "Safety grooving enhances surface traction on concrete surfaces, reducing slip hazards in parking structures, walkways, and other high-traffic areas. Our precision grooving services create customizable patterns that meet ADA compliance while providing long-lasting safety improvements.",
+    fullDescription: "Safety groove and texture concrete, precast concrete, and other materials with precision cutting techniques to create non-slip surfaces, ADA compliance features, and decorative patterns that meet your exact specifications. Our professional team creates safety grooves, ADA strips, custom patterns, and surface texturing that makes concrete and other surfaces more comfortable and safer to walk on while eliminating high spots for perfectly even surfaces.",
     features: [
-      "Enhanced surface traction",
-      "ADA-compliant solutions",
-      "Customizable groove patterns",
-      "Long-lasting results",
-      "Precision depth control",
-      "Minimal downtime"
+      "ADA strips for compliance with accessibility standards",
+      "Cut to specified patterns to meet your exact requirements",
+      "Makes concrete and other surfaces more comfortable to walk on",
+      "Take down high spots on floors to get an even surface",
+      "Safety grooves and anti-slip texturing for enhanced traction",
+      "Custom decorative patterns and architectural details",
+      "Commercial, industrial, medical and residential applications",
+      "Precise, consistent, and professional surface preparation"
     ],
     applications: [
-      "Parking structure decks",
-      "Pedestrian walkways",
-      "Ramp surfaces",
-      "Pool decks",
-      "Loading docks",
-      "Public plaza areas"
+      "ADA COMPLIANCE - ADA strips and accessibility features cut to exact specifications for full compliance",
+      "CUSTOM PATTERNS - Cut to specified patterns and designs to meet your exact requirements and specifications",
+      "SAFETY TEXTURING - Makes concrete and other surfaces more comfortable and safer to walk on",
+      "SURFACE LEVELING - Take down high spots on floors and surfaces to achieve perfectly even results",
+      "ALL MATERIALS - Works on concrete, precast concrete, and other construction materials",
+      "ALL SECTORS - Commercial, industrial, medical, and residential – precise, consistent, professional"
     ],
     benefits: [
-      "Reduces slip hazards",
-      "Meets safety regulations",
-      "Improves drainage",
-      "Extends surface life",
-      "Professional appearance"
+      "Precision cutting techniques for non-slip surfaces",
+      "ADA compliance features and accessibility standards",
+      "Custom patterns and decorative architectural details",
+      "Makes surfaces more comfortable and safer to walk on",
+      "Eliminates high spots for perfectly even surfaces",
+      "Professional surface preparation"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
@@ -330,29 +342,31 @@ export const servicesData: Service[] = [
     title: "Pour Back & Patching",
     tagline: "Seamless Surface Restoration",
     description: "Professional concrete patching and finishing to restore surfaces after cutting.",
-    fullDescription: "Our pour-back and patching services restore concrete surfaces after cutting operations with seamless, professional finishing. Using high-quality materials and expert techniques, we ensure color matching and structural integrity for a complete, like-new appearance.",
+    fullDescription: "Pour back and concrete patching services provide precise replacement of concrete for electrical and plumbing trenches, creating seamless repairs that restore structural integrity and aesthetic continuity to your concrete surfaces. Our professional team specializes in concrete filled steel bollard installation, precision machine pads, test core replacements, and complete trench restoration using proper concrete mixing, placement, and finishing techniques for lasting results.",
     features: [
-      "Complete surface restoration",
-      "Seamless finishing techniques",
-      "Color matching available",
-      "Fast curing options",
-      "Professional-grade materials",
-      "Structural integrity maintained"
+      "Replacement of concrete for electrical and plumbing trenches",
+      "Concrete filled steel bollard installation for security and traffic control",
+      "Machine pads for heavy equipment and industrial applications",
+      "Test core patching and restoration after sampling",
+      "Seamless concrete repairs that match existing surfaces",
+      "Proper concrete mixing and placement techniques",
+      "Professional finishing for aesthetic and functional continuity",
+      "Commercial, industrial, medical and residential applications"
     ],
     applications: [
-      "Post-cutting restoration",
-      "Damaged concrete repair",
-      "Floor leveling",
-      "Joint filling",
-      "Spall repair",
-      "Surface refinishing"
+      "TRENCH REPLACEMENT - Complete concrete replacement for electrical and plumbing trenches with seamless integration",
+      "BOLLARD INSTALLATION - Concrete filled steel bollard installation for security, traffic control, and property protection",
+      "MACHINE PADS - Precision machine pads for heavy equipment, industrial applications, and structural support",
+      "TEST CORE PATCHING - Professional patching and restoration after concrete core sampling and testing procedures",
+      "SEAMLESS REPAIRS - Precise concrete matching and finishing techniques for invisible, lasting repairs",
+      "ALL SECTORS - Commercial, industrial, medical, and residential – professional restoration services"
     ],
     benefits: [
-      "Like-new appearance",
-      "Durable, long-lasting repairs",
-      "Quick turnaround time",
-      "Seamless integration",
-      "Professional finish"
+      "Precise replacement and seamless repairs",
+      "Restores structural integrity and aesthetic continuity",
+      "Specialized in bollards, machine pads, and trench restoration",
+      "Proper concrete mixing, placement, and finishing techniques",
+      "Professional results for lasting durability"
     ],
     icon: (
       <svg viewBox="0 0 64 64" fill="currentColor">
