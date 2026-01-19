@@ -13,7 +13,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-image">
-            <img src="/images/placeholder.jpg" alt="Professional concrete cutting in action" className="hero-bg-image" />
+            <img src="/images/hero.jpeg" alt="Professional concrete cutting in action" className="hero-bg-image" />
           </div>
         </section>
 

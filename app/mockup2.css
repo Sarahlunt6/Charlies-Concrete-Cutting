@@ -309,7 +309,7 @@ h3 {
 /* Hero Section */
 .hero {
     display: block;
-    height: 500px;
+    height: 650px;
     background-color: var(--white);
     position: relative;
     overflow: hidden;
@@ -1036,7 +1036,7 @@ h3 {
     }
 
     .hero-image {
-        min-height: 500px;
+        min-height: 650px;
     }
 
     .equipment-content {
