@@ -2106,7 +2106,9 @@ h3 {
 
 /* Individual Service Page */
 .service-hero {
-    background: linear-gradient(135deg, #1a0f0d 0%, var(--deep-brown) 50%, var(--chocolate-brown) 100%);
+    background:
+        linear-gradient(135deg, rgba(26, 15, 13, 0.85) 0%, rgba(58, 33, 27, 0.85) 50%, rgba(72, 42, 36, 0.85) 100%),
+        url('/images/services-hero.jpg') center/cover no-repeat;
     color: var(--white);
     padding: 6rem 0 5rem;
     text-align: center;
