@@ -1050,11 +1050,14 @@ h3 {
     }
 }
 
-/* Mobile: show text content, hide image */
+/* Mobile: show text content with background image */
 @media (max-width: 768px) {
     .hero {
         height: auto;
-        min-height: 0;
+        min-height: 400px;
+        background:
+            linear-gradient(135deg, rgba(26, 15, 13, 0.7) 0%, rgba(58, 33, 27, 0.7) 50%, rgba(72, 42, 36, 0.7) 100%),
+            url('/images/services-hero.jpg') center/cover no-repeat;
     }
 
     .hero .hero-image {
@@ -1064,6 +1067,19 @@ h3 {
     .hero .hero-content {
         display: flex;
         padding: 4rem 2rem;
+        background: none;
+    }
+
+    .hero .hero-content::before {
+        display: none;
+    }
+
+    .hero .hero-content h1 {
+        color: var(--white);
+    }
+
+    .hero .hero-content .hero-subheadline {
+        color: var(--golden-ochre);
     }
 }
 
