@@ -49,7 +49,6 @@ export default function Header() {
           </li>
           <li><Link href="/about" onClick={closeMobileMenu}>ABOUT</Link></li>
           <li><Link href="/locations" onClick={closeMobileMenu}>LOCATIONS</Link></li>
-          <li><Link href="/gallery" onClick={closeMobileMenu}>GALLERY</Link></li>
           <li><Link href="/contact" onClick={closeMobileMenu}>CONTACT</Link></li>
         </ul>
         <div className="nav-cta">

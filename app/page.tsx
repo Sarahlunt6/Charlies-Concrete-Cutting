@@ -157,7 +157,7 @@ export default function Home() {
               </div>
             </div>
             <div className="service-radius">
-              <p><strong>Service Radius:</strong> Up to 50 miles from city center | <a href="#contact" className="radius-link">Contact us</a> for service area inquiries</p>
+              <p><strong>Service Area:</strong> All of Florida | <a href="#contact" className="radius-link">Contact us</a> for project inquiries</p>
             </div>
           </div>
         </section>

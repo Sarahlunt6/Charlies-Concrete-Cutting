@@ -128,8 +128,8 @@ export default function Locations() {
         <section className="service-radius-section">
           <div className="container">
             <div className="radius-box">
-              <h2>Extended Service Area</h2>
-              <p>While we specialize in Tampa, Sarasota, and Orlando, we can accommodate projects throughout Central and Southwest Florida. Contact us to discuss your project location and timeline.</p>
+              <h2>Statewide Service Area</h2>
+              <p>We proudly serve all of Florida! While we specialize in Tampa, Sarasota, and Orlando, we can accommodate concrete cutting, coring, and scanning projects anywhere in the state. Contact us to discuss your project location and timeline.</p>
               <div className="radius-cta">
                 <a href="tel:8138349011" className="phone-large">(813) 834-9011</a>
                 <Link href="/contact#quote" className="cta-button">Contact Us</Link>
