@@ -309,7 +309,7 @@ h3 {
 /* Hero Section */
 .hero {
     display: block;
-    height: 250px;
+    height: 350px;
     background-color: var(--white);
     position: relative;
     overflow: hidden;
