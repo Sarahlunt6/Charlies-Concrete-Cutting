@@ -15,6 +15,11 @@ export default function Home() {
           <div className="hero-image">
             <img src="/images/hero.jpeg" alt="Professional concrete cutting in action" className="hero-bg-image" />
           </div>
+          <div className="hero-content">
+            <h1>Charlie&apos;s Concrete Cutting</h1>
+            <p className="hero-subheadline">Professional Concrete Cutting Services</p>
+            <Link href="/contact#quote" className="cta-button">GET A FREE QUOTE</Link>
+          </div>
         </section>
 
         {/* Services Section */}

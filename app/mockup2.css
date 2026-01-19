@@ -329,6 +329,11 @@ h3 {
     display: block;
 }
 
+/* Hide hero-content on desktop, show image */
+.hero .hero-content {
+    display: none;
+}
+
 .hero-accent {
     position: absolute;
     inset: 0;
@@ -1042,6 +1047,23 @@ h3 {
     .equipment-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+}
+
+/* Mobile: show text content, hide image */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 0;
+    }
+
+    .hero .hero-image {
+        display: none;
+    }
+
+    .hero .hero-content {
+        display: flex;
+        padding: 4rem 2rem;
     }
 }
 
