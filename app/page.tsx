@@ -1,65 +1,373 @@
 import Image from "next/image";
+import "./mockup2.css";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      {/* Header/Navigation */}
+      <header className="header">
+        <nav className="nav-container">
+          <div className="logo">
+            <img src="/images/logo.png" alt="Charlie's Concrete Cutting - A Name You Can Depend On" className="logo-img" />
+          </div>
+          <button className="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul className="nav-menu">
+            <li><a href="#home">HOME</a></li>
+            <li className="has-dropdown">
+              <a href="#services">SERVICES</a>
+              <ul className="dropdown">
+                <li><a href="#slab-cutting">Slab Cutting</a></li>
+                <li><a href="#wall-cutting">Wall Cutting</a></li>
+                <li><a href="#core-drilling">Core Drilling</a></li>
+                <li><a href="#wire-sawing">Wire Sawing</a></li>
+                <li><a href="#chainsawing">Chainsawing</a></li>
+                <li><a href="#demolition">Demolition & Removal</a></li>
+                <li><a href="#gpr-scanning">GPR Scanning</a></li>
+                <li><a href="#safety-grooving">Safety Grooving</a></li>
+                <li><a href="#pour-back">Pour Back & Patching</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <div className="nav-cta">
+            <a href="tel:8138349011" className="phone">(813) 834-9011</a>
+            <a href="#quote" className="cta-button">GET A QUOTE</a>
+          </div>
+        </nav>
+      </header>
+
+      {/* Main Content */}
+      <main>
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-image">
+            <img src="/images/placeholder.jpg" alt="Professional concrete cutting in action" className="hero-bg-image" />
+            <div className="hero-accent"></div>
+          </div>
+          <div className="hero-content">
+            <h1>Heavy-Duty Concrete Solutions</h1>
+            <p className="hero-subheadline">A Name You Can Depend On</p>
+            <a href="#quote" className="cta-button">REQUEST IMMEDIATE QUOTE</a>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="services">
+          <div className="container">
+            <h2>Complete Concrete Cutting Solutions</h2>
+            <div className="services-grid">
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <circle cx="32" cy="20" r="14" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <rect x="16" y="30" width="32" height="18" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <line x1="32" y1="20" x2="32" y2="48" stroke="currentColor" strokeWidth="2.5"/>
+                    <path d="M20 38 L44 38" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2,2"/>
+                  </svg>
+                </div>
+                <h3>Slab Cutting</h3>
+                <p>Precision cutting through concrete, asphalt, and structural materials up to 27 inches thick for trenching, openings, and expansion joints</p>
+              </div>
+
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="8" y="16" width="48" height="36" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="44" cy="28" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <line x1="44" y1="18" x2="44" y2="38" stroke="currentColor" strokeWidth="2.5"/>
+                    <line x1="12" y1="24" x2="30" y2="24" stroke="currentColor" strokeWidth="1.5"/>
+                    <line x1="12" y1="32" x2="30" y2="32" stroke="currentColor" strokeWidth="1.5"/>
+                    <line x1="12" y1="40" x2="52" y2="40" stroke="currentColor" strokeWidth="1.5"/>
+                  </svg>
+                </div>
+                <h3>Wall Cutting</h3>
+                <p>Clean openings through reinforced concrete and structural walls up to 27″ deep for doors, windows, ducts, and pipe penetrations</p>
+              </div>
+
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="8" y="24" width="48" height="16" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+                    <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                    <line x1="32" y1="8" x2="32" y2="20" stroke="currentColor" strokeWidth="3"/>
+                    <circle cx="32" cy="14" r="6" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  </svg>
+                </div>
+                <h3>Core Drilling</h3>
+                <p>Diamond precision drilling for clean circular cuts through any structural material for utility penetrations, HVAC, and plumbing</p>
+              </div>
+
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="12" y="36" width="40" height="16" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M8 28 Q32 8 56 28" stroke="currentColor" strokeWidth="2.5" fill="none" strokeDasharray="4,2"/>
+                    <circle cx="8" cy="28" r="5" fill="currentColor"/>
+                    <circle cx="56" cy="28" r="5" fill="currentColor"/>
+                    <line x1="16" y1="44" x2="48" y2="44" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3,2"/>
+                  </svg>
+                </div>
+                <h3>Wire Sawing</h3>
+                <p>Unlimited depth cutting for large-scale demolition and structural modifications including foundation removal and bridge work</p>
+              </div>
+
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="8" y="28" width="48" height="20" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M38 16 L48 28" stroke="currentColor" strokeWidth="3"/>
+                    <rect x="32" y="8" width="22" height="12" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <line x1="12" y1="38" x2="52" y2="38" stroke="currentColor" strokeWidth="2"/>
+                    <circle cx="46" cy="13" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3>Chainsawing</h3>
+                <p>Versatile cutting in tight spaces through materials ¼" to 24″ thick including reinforced concrete and precast panels</p>
+              </div>
+
+              <div className="service-card">
+                <div className="service-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="8" y="32" width="48" height="20" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <rect x="16" y="12" width="32" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <line x1="32" y1="20" x2="32" y2="32" stroke="currentColor" strokeWidth="2"/>
+                    <path d="M12 40 Q20 36 28 40 Q36 44 44 40 Q52 36 56 40" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="24" cy="20" r="2" fill="currentColor"/>
+                    <circle cx="40" cy="20" r="2" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3>GPR Scanning</h3>
+                <p>Non-destructive scanning to locate rebar, conduits, and cables before cutting for safety verification and target location</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="stats">
+          <div className="sawtooth-border"></div>
+          <div className="container">
+            <div className="stats-grid">
+              <div className="stat-item">
+                <div className="stat-number">27"</div>
+                <div className="stat-label">Maximum Cut Depth</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">24/7</div>
+                <div className="stat-label">Emergency Service</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Satisfaction Guaranteed</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Areas Section */}
+        <section className="service-areas">
+          <div className="container">
+            <h2>Serving Your Community</h2>
+            <p className="section-intro">We proudly serve residential, commercial, and industrial clients throughout the region</p>
+            <div className="areas-grid">
+              <div className="area-card">
+                <h3>Tampa</h3>
+                <p><a href="tel:8138349011" className="radius-link">(813) 834-9011</a></p>
+              </div>
+              <div className="area-card">
+                <h3>Sarasota</h3>
+                <p><a href="tel:9412545011" className="radius-link">(941) 254-5011</a></p>
+              </div>
+              <div className="area-card">
+                <h3>Orlando</h3>
+                <p><a href="tel:4075053011" className="radius-link">(407) 505-3011</a></p>
+              </div>
+            </div>
+            <div className="service-radius">
+              <p><strong>Service Radius:</strong> Up to 50 miles from city center | <a href="#contact" className="radius-link">Contact us</a> for service area inquiries</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Certifications & Partnerships Section */}
+        <section className="certifications">
+          <div className="container">
+            <h2>Certified & Trusted Professionals</h2>
+            <p className="section-intro">Our commitment to quality and safety is backed by industry certifications and partnerships</p>
+            <div className="cert-grid">
+              <div className="cert-card">
+                <h3>Licensed & Insured</h3>
+                <p>Fully licensed contractors with comprehensive liability insurance</p>
+              </div>
+              <div className="cert-card">
+                <h3>Safety Certified</h3>
+                <p>OSHA-compliant with certified safety training for all operators</p>
+              </div>
+              <div className="cert-card">
+                <h3>Industry Certified</h3>
+                <p>Certified concrete cutting specialists with ongoing training</p>
+              </div>
+              <div className="cert-card">
+                <h3>Quality Guarantee</h3>
+                <p>100% satisfaction guarantee on all work performed</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="why-choose">
+          <div className="container">
+            <h2>Why Choose Charlie&apos;s Concrete Cutting?</h2>
+            <div className="why-grid">
+              <div className="why-card">
+                <h3>Precision & Accuracy</h3>
+                <div className="why-features">
+                  <div className="feature-item">
+                    <p>Diamond cutting technology for clean cuts</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>GPR scanning to locate obstacles before cutting</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Cuts up to 27 inches deep with professional accuracy</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="why-card">
+                <h3>Versatile Capabilities</h3>
+                <div className="why-features">
+                  <div className="feature-item">
+                    <p>9 specialized cutting services</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Handles materials from ¼" to unlimited depth</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Residential to large commercial projects</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="why-card">
+                <h3>Safe & Efficient</h3>
+                <div className="why-features">
+                  <div className="feature-item">
+                    <p>Non-destructive scanning technology</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Minimal disruption to surrounding areas</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Clean, quiet operations with complete debris removal</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="why-card">
+                <h3>Professional Experience</h3>
+                <div className="why-features">
+                  <div className="feature-item">
+                    <p>Trained and certified operators</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>State-of-the-art equipment</p>
+                  </div>
+                  <div className="feature-item">
+                    <p>Complete project management from consultation to cleanup</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{textAlign: 'center', marginTop: '4rem'}}>
+              <a href="#quote" className="why-button">Get Started</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Area Section */}
+        <section className="service-area">
+          <div className="container">
+            <h2>Serving Your Area</h2>
+            <p className="service-area-text">Charlie&apos;s Concrete Cutting proudly serves the region with professional concrete cutting, coring, and scanning services. Contact us today to discuss your project needs.</p>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="cta-final">
+          <div className="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Contact Charlie&apos;s Concrete Cutting today for a free consultation and quote</p>
+            <div className="cta-actions">
+              <a href="tel:8138349011" className="phone-large">(813) 834-9011</a>
+              <a href="#quote" className="cta-button">GET A FREE QUOTE</a>
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="sawtooth-border-top"></div>
+        <div className="container">
+          <div className="footer-grid">
+            <div className="footer-col">
+              <img src="/images/logo.png" alt="Charlie's Concrete Cutting" className="footer-logo-img" />
+              <p className="footer-tagline">A Name You Can Depend On</p>
+              <p>Professional concrete cutting, coring, and scanning services.</p>
+            </div>
+
+            <div className="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#quote">Request Quote</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-col">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#slab-cutting">Slab Cutting</a></li>
+                <li><a href="#wall-cutting">Wall Cutting</a></li>
+                <li><a href="#core-drilling">Core Drilling</a></li>
+                <li><a href="#wire-sawing">Wire Sawing</a></li>
+                <li><a href="#chainsawing">Chainsawing</a></li>
+                <li><a href="#gpr-scanning">GPR Scanning</a></li>
+                <li><a href="#demolition">Demolition</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-col">
+              <h4>Contact Us</h4>
+              <ul className="contact-info">
+                <li>📍 7120 Ashland Glen<br />Lakewood Ranch, FL 34202</li>
+                <li>📞 Tampa: (813) 834-9011<br />📞 Sarasota: (941) 254-5011<br />📞 Orlando: (407) 505-3011</li>
+                <li>✉️ info@charliesconcrete.com</li>
+                <li>🕐 Monday - Friday: 8:00am - 5:00pm<br />Saturday & Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <div className="container">
+            <p>&copy; 2024 Charlie&apos;s Concrete Cutting. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
