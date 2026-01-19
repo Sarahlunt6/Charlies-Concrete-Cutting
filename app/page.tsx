@@ -16,11 +16,6 @@ export default function Home() {
             <img src="/images/placeholder.jpg" alt="Professional concrete cutting in action" className="hero-bg-image" />
             <div className="hero-accent"></div>
           </div>
-          <div className="hero-content">
-            <h1>Charlie's Concrete Cutting</h1>
-            <p className="hero-subheadline">A Name You Can Depend On</p>
-            <Link href="/contact#quote" className="cta-button">REQUEST A QUOTE</Link>
-          </div>
         </section>
 
         {/* Services Section */}
