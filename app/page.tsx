@@ -17,7 +17,7 @@ export default function Home() {
             <div className="hero-accent"></div>
           </div>
           <div className="hero-content">
-            <h1>Heavy-Duty Concrete Solutions</h1>
+            <h1>Charlie's Concrete Cutting</h1>
             <p className="hero-subheadline">A Name You Can Depend On</p>
             <Link href="/contact#quote" className="cta-button">REQUEST A QUOTE</Link>
           </div>
