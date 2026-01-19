@@ -19,18 +19,19 @@ export default function Header() {
           <li className="has-dropdown">
             <Link href="/services">SERVICES</Link>
             <ul className="dropdown">
-              <li><Link href="/services#slab-cutting">Slab Cutting</Link></li>
-              <li><Link href="/services#wall-cutting">Wall Cutting</Link></li>
-              <li><Link href="/services#core-drilling">Core Drilling</Link></li>
-              <li><Link href="/services#wire-sawing">Wire Sawing</Link></li>
-              <li><Link href="/services#chainsawing">Chainsawing</Link></li>
-              <li><Link href="/services#demolition">Demolition & Removal</Link></li>
-              <li><Link href="/services#gpr-scanning">GPR Scanning</Link></li>
-              <li><Link href="/services#safety-grooving">Safety Grooving</Link></li>
-              <li><Link href="/services#pour-back">Pour Back & Patching</Link></li>
+              <li><Link href="/services/slab-cutting">Slab Cutting</Link></li>
+              <li><Link href="/services/wall-cutting">Wall Cutting</Link></li>
+              <li><Link href="/services/core-drilling">Core Drilling</Link></li>
+              <li><Link href="/services/wire-sawing">Wire Sawing</Link></li>
+              <li><Link href="/services/chainsawing">Chainsawing</Link></li>
+              <li><Link href="/services/demolition">Demolition & Removal</Link></li>
+              <li><Link href="/services/gpr-scanning">GPR Scanning</Link></li>
+              <li><Link href="/services/safety-grooving">Safety Grooving</Link></li>
+              <li><Link href="/services/pour-back">Pour Back & Patching</Link></li>
             </ul>
           </li>
           <li><Link href="/about">ABOUT</Link></li>
+          <li><Link href="/locations">LOCATIONS</Link></li>
           <li><Link href="/gallery">GALLERY</Link></li>
           <li><Link href="/contact">CONTACT</Link></li>
         </ul>

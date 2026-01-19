@@ -18,6 +18,7 @@ export default function Footer() {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/locations">Locations</Link></li>
               <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/contact#quote">Request Quote</Link></li>
@@ -27,13 +28,13 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Our Services</h4>
             <ul>
-              <li><Link href="/services#slab-cutting">Slab Cutting</Link></li>
-              <li><Link href="/services#wall-cutting">Wall Cutting</Link></li>
-              <li><Link href="/services#core-drilling">Core Drilling</Link></li>
-              <li><Link href="/services#wire-sawing">Wire Sawing</Link></li>
-              <li><Link href="/services#chainsawing">Chainsawing</Link></li>
-              <li><Link href="/services#gpr-scanning">GPR Scanning</Link></li>
-              <li><Link href="/services#demolition">Demolition</Link></li>
+              <li><Link href="/services/slab-cutting">Slab Cutting</Link></li>
+              <li><Link href="/services/wall-cutting">Wall Cutting</Link></li>
+              <li><Link href="/services/core-drilling">Core Drilling</Link></li>
+              <li><Link href="/services/wire-sawing">Wire Sawing</Link></li>
+              <li><Link href="/services/chainsawing">Chainsawing</Link></li>
+              <li><Link href="/services/gpr-scanning">GPR Scanning</Link></li>
+              <li><Link href="/services/demolition">Demolition</Link></li>
             </ul>
           </div>
 
