@@ -1,40 +1,9 @@
-"use client";
-
-import Link from "next/link";
-import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../mockup2.css";
+import Script from "next/script";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
-    projectLocation: "",
-    cuttingType: "",
-    projectDetails: "",
-    contactMethod: ""
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <>
       <Header />
@@ -129,158 +98,30 @@ export default function Contact() {
                   <h3>REQUEST QUOTE</h3>
                   <h2>GET YOUR <span className="text-red">FREE ESTIMATE</span></h2>
                 </div>
-                <form onSubmit={handleSubmit} className="quote-form">
-                  <div className="form-group">
-                    <label htmlFor="name">YOUR NAME *</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="company">COMPANY NAME</label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      placeholder="Your company name"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="email">EMAIL *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="youremail@business.com"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="phone">PHONE *</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="projectLocation">PROJECT LOCATION *</label>
-                    <input
-                      type="text"
-                      id="projectLocation"
-                      name="projectLocation"
-                      required
-                      value={formData.projectLocation}
-                      onChange={handleChange}
-                      placeholder="City, State, or Full Address"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="cuttingType">TYPE OF CONCRETE CUTTING NEEDED *</label>
-                    <select
-                      id="cuttingType"
-                      name="cuttingType"
-                      required
-                      value={formData.cuttingType}
-                      onChange={handleChange}
-                    >
-                      <option value="">Please choose an option</option>
-                      <option value="slab-cutting">Slab Cutting</option>
-                      <option value="wall-cutting">Wall Cutting</option>
-                      <option value="core-drilling">Core Drilling</option>
-                      <option value="wire-sawing">Wire Sawing</option>
-                      <option value="chainsawing">Chainsawing</option>
-                      <option value="demolition">Demolition & Removal</option>
-                      <option value="gpr-scanning">GPR Scanning</option>
-                      <option value="safety-grooving">Safety Grooving</option>
-                      <option value="pour-back">Pour Back & Patching</option>
-                      <option value="not-sure">Not Sure</option>
-                    </select>
-                  </div>
-
-                  <div className="form-group full-width">
-                    <label htmlFor="projectDetails">PROJECT DETAILS & SPECIFICATIONS</label>
-                    <textarea
-                      id="projectDetails"
-                      name="projectDetails"
-                      rows={5}
-                      value={formData.projectDetails}
-                      onChange={handleChange}
-                      placeholder="Please describe your project in detail: access constraints, timeline, special requirements, etc."
-                    ></textarea>
-                  </div>
-
-                  <div className="form-group full-width">
-                    <label>PREFERRED CONTACT METHOD</label>
-                    <div className="radio-group">
-                      <label className="radio-label">
-                        <input
-                          type="radio"
-                          name="contactMethod"
-                          value="phone"
-                          checked={formData.contactMethod === "phone"}
-                          onChange={handleChange}
-                        />
-                        <span>Phone Call</span>
-                      </label>
-                      <label className="radio-label">
-                        <input
-                          type="radio"
-                          name="contactMethod"
-                          value="email"
-                          checked={formData.contactMethod === "email"}
-                          onChange={handleChange}
-                        />
-                        <span>Email</span>
-                      </label>
-                      <label className="radio-label">
-                        <input
-                          type="radio"
-                          name="contactMethod"
-                          value="text"
-                          checked={formData.contactMethod === "text"}
-                          onChange={handleChange}
-                        />
-                        <span>Text Message</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <button type="submit" className="cta-button submit-button">
-                    Submit
-                  </button>
-
-                  {submitted && (
-                    <div className="form-success">
-                      Thank you! We&apos;ll contact you shortly.
-                    </div>
-                  )}
-                </form>
+                <iframe
+                  src="https://link.opkie.com/widget/form/DSSJ2JYESJAzkaZUgXpa"
+                  style={{width: '100%', height: '600px', border: 'none', borderRadius: '3px'}}
+                  id="inline-DSSJ2JYESJAzkaZUgXpa"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="General Website Contact Form"
+                  data-height="undefined"
+                  data-layout-iframe-id="inline-DSSJ2JYESJAzkaZUgXpa"
+                  data-form-id="DSSJ2JYESJAzkaZUgXpa"
+                  title="General Website Contact Form"
+                ></iframe>
               </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
+      <Script src="https://link.opkie.com/js/form_embed.js" strategy="lazyOnload" />
     </>
   );
 }
