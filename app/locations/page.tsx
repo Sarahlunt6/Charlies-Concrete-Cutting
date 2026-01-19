@@ -70,7 +70,16 @@ export default function Locations() {
                 </div>
               </div>
               <div className="office-image">
-                <img src="/images/placeholder.jpg" alt="Charlie's Concrete Cutting Office" />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.9190269375083!2d-82.40345876031613!3d27.39794456540055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c339cee5a09b85%3A0x7a6dc1c8e3093e2e!2s7120%20Ashland%20Glen%2C%20Lakewood%20Ranch%2C%20FL%2034202!5e0!3m2!1sen!2sus!4v1768849625968!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{border: 0, minHeight: '400px'}}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Charlie's Concrete Cutting Main Office Location"
+                ></iframe>
               </div>
             </div>
           </div>

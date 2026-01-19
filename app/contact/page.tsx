@@ -9,11 +9,13 @@ import "../mockup2.css";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
+    company: "",
     email: "",
     phone: "",
-    service: "",
-    location: "",
-    message: ""
+    projectLocation: "",
+    cuttingType: "",
+    projectDetails: "",
+    contactMethod: ""
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -66,6 +68,20 @@ export default function Contact() {
                     </div>
                   </div>
 
+                  {/* Map Embed */}
+                  <div className="contact-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.9190269375083!2d-82.40345876031613!3d27.39794456540055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c339cee5a09b85%3A0x7a6dc1c8e3093e2e!2s7120%20Ashland%20Glen%2C%20Lakewood%20Ranch%2C%20FL%2034202!5e0!3m2!1sen!2sus!4v1768849625968!5m2!1sen!2sus"
+                      width="100%"
+                      height="300"
+                      style={{border: 0, borderRadius: '8px'}}
+                      allowFullScreen={true}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Charlie's Concrete Cutting Location"
+                    ></iframe>
+                  </div>
+
                   <div className="contact-detail-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -109,10 +125,13 @@ export default function Contact() {
 
               {/* Quote Form */}
               <div className="quote-form-block" id="quote">
-                <h2>Request a Quote</h2>
+                <div className="form-header">
+                  <h3>REQUEST QUOTE</h3>
+                  <h2>GET YOUR <span className="text-red">FREE ESTIMATE</span></h2>
+                </div>
                 <form onSubmit={handleSubmit} className="quote-form">
                   <div className="form-group">
-                    <label htmlFor="name">Name *</label>
+                    <label htmlFor="name">YOUR NAME *</label>
                     <input
                       type="text"
                       id="name"
@@ -120,12 +139,24 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your Name"
+                      placeholder="Enter your full name"
                     />
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="email">Email *</label>
+                    <label htmlFor="company">COMPANY NAME</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      placeholder="Your company name"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="email">EMAIL *</label>
                     <input
                       type="email"
                       id="email"
@@ -133,12 +164,12 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="your.email@example.com"
+                      placeholder="youremail@business.com"
                     />
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="phone">Phone *</label>
+                    <label htmlFor="phone">PHONE *</label>
                     <input
                       type="tel"
                       id="phone"
@@ -151,15 +182,28 @@ export default function Contact() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="service">Service Needed *</label>
-                    <select
-                      id="service"
-                      name="service"
+                    <label htmlFor="projectLocation">PROJECT LOCATION *</label>
+                    <input
+                      type="text"
+                      id="projectLocation"
+                      name="projectLocation"
                       required
-                      value={formData.service}
+                      value={formData.projectLocation}
+                      onChange={handleChange}
+                      placeholder="City, State, or Full Address"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="cuttingType">TYPE OF CONCRETE CUTTING NEEDED *</label>
+                    <select
+                      id="cuttingType"
+                      name="cuttingType"
+                      required
+                      value={formData.cuttingType}
                       onChange={handleChange}
                     >
-                      <option value="">Select a service...</option>
+                      <option value="">Please choose an option</option>
                       <option value="slab-cutting">Slab Cutting</option>
                       <option value="wall-cutting">Wall Cutting</option>
                       <option value="core-drilling">Core Drilling</option>
@@ -173,38 +217,56 @@ export default function Contact() {
                     </select>
                   </div>
 
-                  <div className="form-group">
-                    <label htmlFor="location">Location *</label>
-                    <select
-                      id="location"
-                      name="location"
-                      required
-                      value={formData.location}
-                      onChange={handleChange}
-                    >
-                      <option value="">Select your location...</option>
-                      <option value="tampa">Tampa</option>
-                      <option value="sarasota">Sarasota</option>
-                      <option value="orlando">Orlando</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
                   <div className="form-group full-width">
-                    <label htmlFor="message">Project Details *</label>
+                    <label htmlFor="projectDetails">PROJECT DETAILS & SPECIFICATIONS</label>
                     <textarea
-                      id="message"
-                      name="message"
-                      required
+                      id="projectDetails"
+                      name="projectDetails"
                       rows={5}
-                      value={formData.message}
+                      value={formData.projectDetails}
                       onChange={handleChange}
-                      placeholder="Please describe your project needs..."
+                      placeholder="Please describe your project in detail: access constraints, timeline, special requirements, etc."
                     ></textarea>
                   </div>
 
+                  <div className="form-group full-width">
+                    <label>PREFERRED CONTACT METHOD</label>
+                    <div className="radio-group">
+                      <label className="radio-label">
+                        <input
+                          type="radio"
+                          name="contactMethod"
+                          value="phone"
+                          checked={formData.contactMethod === "phone"}
+                          onChange={handleChange}
+                        />
+                        <span>Phone Call</span>
+                      </label>
+                      <label className="radio-label">
+                        <input
+                          type="radio"
+                          name="contactMethod"
+                          value="email"
+                          checked={formData.contactMethod === "email"}
+                          onChange={handleChange}
+                        />
+                        <span>Email</span>
+                      </label>
+                      <label className="radio-label">
+                        <input
+                          type="radio"
+                          name="contactMethod"
+                          value="text"
+                          checked={formData.contactMethod === "text"}
+                          onChange={handleChange}
+                        />
+                        <span>Text Message</span>
+                      </label>
+                    </div>
+                  </div>
+
                   <button type="submit" className="cta-button submit-button">
-                    Submit Request
+                    Submit
                   </button>
 
                   {submitted && (

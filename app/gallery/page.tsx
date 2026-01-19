@@ -4,19 +4,6 @@ import Footer from "../components/Footer";
 import "../mockup2.css";
 
 export default function Gallery() {
-  // Placeholder for gallery images - these can be replaced with actual project photos
-  const galleryItems = [
-    { id: 1, title: "Slab Cutting Project", category: "Slab Cutting" },
-    { id: 2, title: "Wall Opening Installation", category: "Wall Cutting" },
-    { id: 3, title: "Core Drilling Work", category: "Core Drilling" },
-    { id: 4, title: "Commercial Demolition", category: "Demolition" },
-    { id: 5, title: "Wire Sawing Project", category: "Wire Sawing" },
-    { id: 6, title: "GPR Scanning Service", category: "GPR Scanning" },
-    { id: 7, title: "Residential Slab Cut", category: "Slab Cutting" },
-    { id: 8, title: "Industrial Core Drilling", category: "Core Drilling" },
-    { id: 9, title: "Chainsaw Cutting", category: "Chainsawing" },
-  ];
-
   return (
     <>
       <Header />
@@ -36,17 +23,11 @@ export default function Gallery() {
               Explore our portfolio of completed projects showcasing our expertise in concrete cutting, coring, and demolition services. Each project demonstrates our commitment to precision, safety, and customer satisfaction.
             </p>
 
-            <div className="gallery-grid">
-              {galleryItems.map((item) => (
-                <div key={item.id} className="gallery-item">
-                  <div className="gallery-image gallery-coming-soon">
-                    <div className="coming-soon-content">
-                      <h3>Photos Coming Soon</h3>
-                      <p>{item.category}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            <div className="gallery-coming-soon-large">
+              <div className="coming-soon-content">
+                <h2>Photos Coming Soon</h2>
+                <p>We're building our gallery of completed projects. Check back soon to see our work!</p>
+              </div>
             </div>
 
             <div className="gallery-cta">
