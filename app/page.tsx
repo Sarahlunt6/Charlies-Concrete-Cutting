@@ -1,46 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
 import "./mockup2.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
-      {/* Header/Navigation */}
-      <header className="header">
-        <nav className="nav-container">
-          <div className="logo">
-            <img src="/images/logo.png" alt="Charlie's Concrete Cutting - A Name You Can Depend On" className="logo-img" />
-          </div>
-          <button className="mobile-menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul className="nav-menu">
-            <li><a href="#home">HOME</a></li>
-            <li className="has-dropdown">
-              <a href="#services">SERVICES</a>
-              <ul className="dropdown">
-                <li><a href="#slab-cutting">Slab Cutting</a></li>
-                <li><a href="#wall-cutting">Wall Cutting</a></li>
-                <li><a href="#core-drilling">Core Drilling</a></li>
-                <li><a href="#wire-sawing">Wire Sawing</a></li>
-                <li><a href="#chainsawing">Chainsawing</a></li>
-                <li><a href="#demolition">Demolition & Removal</a></li>
-                <li><a href="#gpr-scanning">GPR Scanning</a></li>
-                <li><a href="#safety-grooving">Safety Grooving</a></li>
-                <li><a href="#pour-back">Pour Back & Patching</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-          <div className="nav-cta">
-            <a href="tel:8138349011" className="phone">(813) 834-9011</a>
-            <a href="#quote" className="cta-button">GET A QUOTE</a>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main>
@@ -53,7 +19,7 @@ export default function Home() {
           <div className="hero-content">
             <h1>Heavy-Duty Concrete Solutions</h1>
             <p className="hero-subheadline">A Name You Can Depend On</p>
-            <a href="#quote" className="cta-button">REQUEST IMMEDIATE QUOTE</a>
+            <Link href="/contact#quote" className="cta-button">REQUEST A QUOTE</Link>
           </div>
         </section>
 
@@ -227,68 +193,68 @@ export default function Home() {
           <div className="container">
             <h2>Why Choose Charlie&apos;s Concrete Cutting?</h2>
             <div className="why-grid">
-              <div className="why-card">
-                <h3>Precision & Accuracy</h3>
-                <div className="why-features">
-                  <div className="feature-item">
-                    <p>Diamond cutting technology for clean cuts</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <h3>Precision & Accuracy</h3>
                   </div>
-                  <div className="feature-item">
-                    <p>GPR scanning to locate obstacles before cutting</p>
-                  </div>
-                  <div className="feature-item">
-                    <p>Cuts up to 27 inches deep with professional accuracy</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="why-card">
-                <h3>Versatile Capabilities</h3>
-                <div className="why-features">
-                  <div className="feature-item">
-                    <p>9 specialized cutting services</p>
-                  </div>
-                  <div className="feature-item">
-                    <p>Handles materials from ¼" to unlimited depth</p>
-                  </div>
-                  <div className="feature-item">
-                    <p>Residential to large commercial projects</p>
+                  <div className="flip-card-back">
+                    <ul>
+                      <li>Diamond cutting technology for clean cuts</li>
+                      <li>GPR scanning to locate obstacles before cutting</li>
+                      <li>Cuts up to 27 inches deep with professional accuracy</li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="why-card">
-                <h3>Safe & Efficient</h3>
-                <div className="why-features">
-                  <div className="feature-item">
-                    <p>Non-destructive scanning technology</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <h3>Versatile Capabilities</h3>
                   </div>
-                  <div className="feature-item">
-                    <p>Minimal disruption to surrounding areas</p>
-                  </div>
-                  <div className="feature-item">
-                    <p>Clean, quiet operations with complete debris removal</p>
+                  <div className="flip-card-back">
+                    <ul>
+                      <li>9 specialized cutting services</li>
+                      <li>Handles materials from ¼" to unlimited depth</li>
+                      <li>Residential to large commercial projects</li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="why-card">
-                <h3>Professional Experience</h3>
-                <div className="why-features">
-                  <div className="feature-item">
-                    <p>Trained and certified operators</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <h3>Safe & Efficient</h3>
                   </div>
-                  <div className="feature-item">
-                    <p>State-of-the-art equipment</p>
+                  <div className="flip-card-back">
+                    <ul>
+                      <li>Non-destructive scanning technology</li>
+                      <li>Minimal disruption to surrounding areas</li>
+                      <li>Clean, quiet operations with complete debris removal</li>
+                    </ul>
                   </div>
-                  <div className="feature-item">
-                    <p>Complete project management from consultation to cleanup</p>
+                </div>
+              </div>
+
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <h3>Professional Experience</h3>
+                  </div>
+                  <div className="flip-card-back">
+                    <ul>
+                      <li>Trained and certified operators</li>
+                      <li>State-of-the-art equipment</li>
+                      <li>Complete project management from consultation to cleanup</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
             <div style={{textAlign: 'center', marginTop: '4rem'}}>
-              <a href="#quote" className="why-button">Get Started</a>
+              <Link href="/contact#quote" className="why-button">Get Started</Link>
             </div>
           </div>
         </section>
@@ -308,66 +274,13 @@ export default function Home() {
             <p>Contact Charlie&apos;s Concrete Cutting today for a free consultation and quote</p>
             <div className="cta-actions">
               <a href="tel:8138349011" className="phone-large">(813) 834-9011</a>
-              <a href="#quote" className="cta-button">GET A FREE QUOTE</a>
+              <Link href="/contact#quote" className="cta-button">GET A FREE QUOTE</Link>
             </div>
           </div>
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="sawtooth-border-top"></div>
-        <div className="container">
-          <div className="footer-grid">
-            <div className="footer-col">
-              <img src="/images/logo.png" alt="Charlie's Concrete Cutting" className="footer-logo-img" />
-              <p className="footer-tagline">A Name You Can Depend On</p>
-              <p>Professional concrete cutting, coring, and scanning services.</p>
-            </div>
-
-            <div className="footer-col">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#quote">Request Quote</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-col">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#slab-cutting">Slab Cutting</a></li>
-                <li><a href="#wall-cutting">Wall Cutting</a></li>
-                <li><a href="#core-drilling">Core Drilling</a></li>
-                <li><a href="#wire-sawing">Wire Sawing</a></li>
-                <li><a href="#chainsawing">Chainsawing</a></li>
-                <li><a href="#gpr-scanning">GPR Scanning</a></li>
-                <li><a href="#demolition">Demolition</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-col">
-              <h4>Contact Us</h4>
-              <ul className="contact-info">
-                <li>📍 7120 Ashland Glen<br />Lakewood Ranch, FL 34202</li>
-                <li>📞 Tampa: (813) 834-9011<br />📞 Sarasota: (941) 254-5011<br />📞 Orlando: (407) 505-3011</li>
-                <li>✉️ info@charliesconcrete.com</li>
-                <li>🕐 Monday - Friday: 8:00am - 5:00pm<br />Saturday & Sunday: Closed</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <div className="container">
-            <p>&copy; 2024 Charlie&apos;s Concrete Cutting. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
