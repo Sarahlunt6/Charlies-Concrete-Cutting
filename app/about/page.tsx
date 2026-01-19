@@ -20,9 +20,9 @@ export default function About() {
         <section className="about-section">
           <div className="container">
             <div className="about-intro">
-              <h2>A Name You Can Depend On</h2>
+              <h2>Three Generations of Excellence</h2>
               <p className="lead-text">
-                Charlie&apos;s Concrete Cutting has been serving Tampa, Sarasota, Orlando, and surrounding areas with professional concrete cutting, coring, and scanning services. Our commitment to quality, safety, and customer satisfaction has made us a trusted name in the industry.
+                Charlie&apos;s Concrete Cutting is a family-owned business proud to represent three generations of concrete cutting professionals. For decades, we&apos;ve been serving Tampa, Sarasota, Orlando, and surrounding areas with expert concrete cutting, coring, and scanning services. Our family legacy of craftsmanship, combined with our commitment to quality, safety, and customer satisfaction, has made us a trusted name in the industry.
               </p>
             </div>
 
@@ -35,8 +35,8 @@ export default function About() {
                     <line x1="32" y1="20" x2="32" y2="48" stroke="currentColor" strokeWidth="2.5"/>
                   </svg>
                 </div>
-                <h3>Expert Technicians</h3>
-                <p>Our team consists of highly trained and certified concrete cutting professionals with years of hands-on experience.</p>
+                <h3>Three Generations of Expertise</h3>
+                <p>Our family business spans three generations of concrete cutting professionals, passing down knowledge, techniques, and a commitment to excellence.</p>
               </div>
 
               <div className="about-card">
@@ -60,7 +60,7 @@ export default function About() {
                   </svg>
                 </div>
                 <h3>Safety First</h3>
-                <p>OSHA-compliant operations with comprehensive safety training and GPR scanning to prevent accidents and damage.</p>
+                <p>Professional operations with comprehensive safety training and GPR scanning to prevent accidents and damage.</p>
               </div>
 
               <div className="about-card">

@@ -174,7 +174,7 @@ export default function Home() {
               </div>
               <div className="cert-card">
                 <h3>Safety Certified</h3>
-                <p>OSHA-compliant with certified safety training for all operators</p>
+                <p>Professional safety standards with certified training for all operators</p>
               </div>
               <div className="cert-card">
                 <h3>Industry Certified</h3>
